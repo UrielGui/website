@@ -1,7 +1,10 @@
-import '../styles/globals.css'
+import '../styles/styles.css';
+import '../styles/tailwind/core.css';
+import '../styles/tailwind/components.css';
+import '../styles/tailwind/utilities.css';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+function UrielPortfolio({ Component, pageProps }) {
+  return <Component {...pageProps} />;
+};
 
-export default MyApp
+export default UrielPortfolio;
