@@ -49,7 +49,7 @@ export default class OnePage extends React.Component {
     };
 
     return (
-      <div className="h-full">
+      <>
         <Head>
           <title>Uriel - Portfólio</title>
           <link rel="icon" href="/favicon.ico" />
@@ -60,7 +60,7 @@ export default class OnePage extends React.Component {
         <Sobre />
         <Habilidades />
         <Contato />
-      </div>
+      </>
     )
   }
 }
