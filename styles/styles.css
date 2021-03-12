@@ -423,3 +423,29 @@
 .hide-z {
   z-index: -1;
 }
+
+.logo-loading {
+  transform-style: preserve-3d;
+  -webkit-animation: logo-loading 0.4s linear infinite;
+  -moz-animation: logo-loading 0.4s linear infinite;
+  animation: logo-loading 0.4s linear infinite;
+}
+
+@keyframes logo-loading {
+  100% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+}
+@-moz-keyframes logo-loading {
+  100% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+}
+@-webkit-keyframes logo-loading {
+  100% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+}

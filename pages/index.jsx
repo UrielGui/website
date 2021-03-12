@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react'
+import LoadingScreen from './loading'
 import Head from 'next/head'
 
 import Header from './header/'
@@ -11,7 +12,8 @@ export default class OnePage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      scroll: 0
+      scroll: 0,
+      loading: true
     };
   }
 
@@ -31,6 +33,10 @@ export default class OnePage extends React.Component {
       scroll: scroll
     });
   };
+
+  componentDidMount() {
+    loadingTime().then(() => this.setState({ loading: false }));
+  }
 
   render() {
     const progressMainWrapper = {
@@ -55,12 +61,21 @@ export default class OnePage extends React.Component {
           <link rel="icon" href="/favicon.ico" />
           <meta name="description" content="Conheça o portfólio oficial do Desenvolvedor Front End Uriel Guimarães, na qual visa sempre a inovação e a personalidade própria em seus projetos." />
         </Head>
-        <div className="progress-bar" style={progressMainWrapper}><div style={progressMainStyle} /></div>
-        <Header />
-        <Sobre />
-        <Habilidades />
-        <Contato />
+        {this.state.loading === false ? (
+          <>
+            <div className="progress-bar" style={progressMainWrapper}><div style={progressMainStyle} /></div>
+            <Header />
+            <Sobre />
+            <Habilidades />
+            <Contato />
+          </>
+        ) : (
+          <LoadingScreen />
+        )}
       </>
     )
   }
+}
+function loadingTime() {
+  return new Promise((resolve) => setTimeout(() => resolve(), 2000));
 }
