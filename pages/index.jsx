@@ -77,5 +77,5 @@ export default class OnePage extends React.Component {
   }
 }
 function loadingTime() {
-  return new Promise((resolve) => setTimeout(() => resolve(), 2000));
+  return new Promise((resolve) => setTimeout(() => resolve(), 2500));
 }
