@@ -19,6 +19,7 @@ export default class OnePage extends React.Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.progressBar);
+    loadingTime().then(() => this.setState({ loading: false }));
   }
   componentWillUnmount() {
     window.removeEventListener("scroll", this.progressBar);
@@ -33,10 +34,6 @@ export default class OnePage extends React.Component {
       scroll: scroll
     });
   };
-
-  componentDidMount() {
-    loadingTime().then(() => this.setState({ loading: false }));
-  }
 
   render() {
     const progressMainWrapper = {
@@ -59,7 +56,7 @@ export default class OnePage extends React.Component {
         <Head>
           <title>Uriel - Portfólio</title>
           <link rel="icon" href="/favicon.ico" />
-          <meta name="description" content="Conheça o portfólio oficial do Desenvolvedor Front End Uriel Guimarães, na qual visa sempre a inovação e a personalidade própria em seus projetos." />
+          <meta name="description" content="Conheça o portfólio oficial do Desenvolvedor Front=End Uriel Guimarães, na qual visa sempre a inovação e a personalidade própria em seus projetos." />
         </Head>
         {this.state.loading === false ? (
           <>
