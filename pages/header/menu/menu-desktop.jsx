@@ -14,9 +14,9 @@ export default function MenuDesktop() {
             <Link to="contato" className="cursor-pointer text-gray-300 hover:text-uriel-blue-light">
                 Contato
             </Link>
-            <Link to="/sobre" className="cursor-pointer text-purple-500 hover:text-uriel-blue-light">
+            <a href="https://github.com/UrielGui" target="_blank" className="cursor-pointer text-purple-500 hover:text-uriel-blue-light">
                 <FaGithub className="inline mb-1 mr-px" /> GitHub
-            </Link>
+            </a>
         </>
     )
 
