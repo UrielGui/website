@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 
 export default function SocialMedia() {
   return (
-    <div className="social-media flex justify-center mt-7">
+    <div className="social-media flex justify-center sm:mt-7 mt-2">
       <div className="button-social-media">
         <a href="https://www.facebook.com/uriel.guimaraes.14/" target="_blank">
           <div className="icon p-4">
