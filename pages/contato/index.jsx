@@ -13,7 +13,7 @@ export default function Contato() {
                                 <Formulario />
                             </div>
                         </div>
-                        <div className="md:w-1/2 md:h-screen md:bg-contato-2-background md:bg-no-repeat md:bg-cover md:bg-center"></div>
+                        <div className="md:w-1/2 md:min-h-screen md:bg-contato-2-background md:bg-no-repeat md:bg-cover md:bg-center"></div>
                     </div>
                 </div>
             </div>

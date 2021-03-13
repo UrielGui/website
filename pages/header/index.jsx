@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 export default function Header() {
   return (
     <section id="header" className="h-full">
-      <div className="sm:h-screen">
+      <div className="sm:min-h-screen">
         <div className="w-full h-full absolute bg-home-background bg-no-repeat bg-cover bg-center zoombg hide-z"></div>
         <Menu />
         <TextBox />

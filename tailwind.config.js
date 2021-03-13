@@ -8,7 +8,7 @@ module.exports = {
       }
     },
     inset: {
-      '1/12': '12%',
+      '1/12': '25%',
     },
     extend: {
       backgroundImage: theme => ({
