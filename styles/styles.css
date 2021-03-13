@@ -277,7 +277,7 @@
     width: 0;
   }
   100% {
-    width: 66%;
+    width: 74%;
   }
 }
 @keyframes load-wp {
@@ -293,7 +293,7 @@
     width: 0;
   }
   100% {
-    width: 76%;
+    width: 68%;
   }
 }
 @keyframes load-sass {
