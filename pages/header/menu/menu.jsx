@@ -24,7 +24,7 @@ export default function Menu() {
               <FaBars onClick={handleClick} />
             </div>
           </div>
-          <nav className="ml-10 2xl:text-2xl menu-align space-x-10 uppercase font-semibold lg:absolute md:block hidden" >
+          <nav className="ml-10 2xl:text-2xl menu-align space-x-10 uppercase font-semibold lg:absolute lg:block hidden" >
             <MenuDesktop />
           </nav>
         </div>
