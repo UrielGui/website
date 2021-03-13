@@ -1,5 +1,6 @@
-import React from "react";
+import React from 'react';
 import Head from 'next/head'
+import LoadingScreen from './loading'
 
 import Header from './header/'
 import Sobre from './sobre/'
@@ -11,12 +12,14 @@ export default class OnePage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      scroll: 0
+      scroll: 0,
+      loading: true
     };
   }
 
   componentDidMount() {
     window.addEventListener("scroll", this.progressBar);
+    loadingTime().then(() => this.setState({ loading: false }));
   }
   componentWillUnmount() {
     window.removeEventListener("scroll", this.progressBar);
@@ -33,6 +36,7 @@ export default class OnePage extends React.Component {
   };
 
   render() {
+
     const progressMainWrapper = {
       height: "5px",
       position: "fixed",
@@ -53,14 +57,23 @@ export default class OnePage extends React.Component {
         <Head>
           <title>Uriel - Portfólio</title>
           <link rel="icon" href="/favicon.ico" />
-          <meta name="description" content="Conheça o portfólio oficial do Desenvolvedor Front End Uriel Guimarães, na qual visa sempre a inovação e a personalidade própria em seus projetos." />
+          <meta name="description" content="Conheça o portfólio oficial do Desenvolvedor Front=End Uriel Guimarães, na qual visa sempre a inovação e a personalidade própria em seus projetos." />
         </Head>
-        <div className="progress-bar" style={progressMainWrapper}><div style={progressMainStyle} /></div>
-        <Header />
-        <Sobre />
-        <Habilidades />
-        <Contato />
+        {this.state.loading === false ? (
+          <>
+            <div className="progress-bar" style={progressMainWrapper}><div style={progressMainStyle} /></div>
+            <Header />
+            <Sobre />
+            <Habilidades />
+            <Contato />
+          </>
+        ) : (
+          <LoadingScreen />
+        )}
       </>
     )
   }
+}
+function loadingTime() {
+  return new Promise((resolve) => setTimeout(() => resolve(), 2500));
 }
