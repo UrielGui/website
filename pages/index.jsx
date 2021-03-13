@@ -1,6 +1,6 @@
-import React from 'react'
-import LoadingScreen from './loading'
+import React from 'react';
 import Head from 'next/head'
+import LoadingScreen from './loading'
 
 import Header from './header/'
 import Sobre from './sobre/'
@@ -36,6 +36,7 @@ export default class OnePage extends React.Component {
   };
 
   render() {
+
     const progressMainWrapper = {
       height: "5px",
       position: "fixed",

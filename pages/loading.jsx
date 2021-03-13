@@ -1,11 +1,27 @@
 import React from "react";
-import Image from 'next/image'
 
 export default function Loading() {
     return (
-        <div className="loading h-screen w-full flex flex-row justify-center items-center">
-            <div className="logo-loading">
-                <Image src="/img/logo.png" alt="Uriel - Portfolio" width={100} height={100}></Image>
+        <div id="page-loading">
+            <div className="container-loading">
+                <div className="boxColor-loading">
+                    <div className="box-loading" />
+                </div>
+                <h1 className="loader">
+                    <span>C</span>
+                    <span>A</span>
+                    <span>R</span>
+                    <span>R</span>
+                    <span>E</span>
+                    <span>G</span>
+                    <span>A</span>
+                    <span>N</span>
+                    <span>D</span>
+                    <span>O</span>
+                </h1>
+                <div className="progress-loading">
+                    <div className="progress-loading-value" />
+                </div>
             </div>
         </div>
     )
