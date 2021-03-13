@@ -9,7 +9,7 @@ export default function Contato() {
                         <div className="md:w-1/2">
                             <div className="md:py-16 py-3 pr-10">
                                 <h1 className="text-white text-2xl 2xl:text-4xl">Formulário de contato</h1>
-                                <p className="text-white pt-4 2xl:text-xl">Envie-me uma mensagem, isso pode fazer a diferença em seu próximo projeto ;)</p>
+                                <p className="text-white sm:text-base text-xs pt-4 2xl:text-xl">Envie-me uma mensagem, isso pode fazer a diferença em seu próximo projeto ;)</p>
                                 <Formulario />
                             </div>
                         </div>

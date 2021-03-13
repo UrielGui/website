@@ -53,13 +53,13 @@ export default function Formulario() {
         <div className="pt-6">
             <ToastContainer />
             <form onSubmit={handleFormSubmit}>
-                <input className="w-full p-2.5 rounded-xl text-white bg-transparent border-b-2 border-indigo-600 focus:border-blue-600" type="text" name="nome" id="nome" onChange={handleInputChange} placeholder="Insira aqui o seu nome" required />
+                <input className="w-full p-2.5 md:text-base text-sm rounded-xl text-white bg-transparent border-b-2 border-indigo-600 focus:border-blue-600" type="text" name="nome" id="nome" onChange={handleInputChange} placeholder="Insira aqui o seu nome" required />
 
-                <input className="w-full p-2.5 rounded-xl text-white bg-transparent border-b-2 border-indigo-600 mt-6 focus:border-blue-600" type="email" onChange={handleInputChange} name="email" id="email" placeholder="Insira aqui o seu email" required />
+                <input className="w-full p-2.5 md:text-base text-sm rounded-xl text-white bg-transparent border-b-2 border-indigo-600 mt-6 focus:border-blue-600" type="email" onChange={handleInputChange} name="email" id="email" placeholder="Insira aqui o seu email" required />
 
-                <textarea className="w-full p-2.5 rounded-xl text-white bg-transparent border-b-2 border-indigo-600 mt-6 h-52 focus:border-blue-600" type="text" onChange={handleInputChange} name="mensagem" id="mensagem" placeholder="Insira aqui a sua mensagem" required />
+                <textarea className="w-full p-2.5 md:text-base text-sm rounded-xl text-white bg-transparent border-b-2 border-indigo-600 mt-6 h-24 sm:h-32 md:h-52 focus:border-blue-600" type="text" onChange={handleInputChange} name="mensagem" id="mensagem" placeholder="Insira aqui a sua mensagem" required />
 
-                <input className="w-full bg-indigo-600 text-white uppercase py-3.5 rounded-xl font-semibold cursor-pointer mt-6 hover:bg-blue-600" type="submit" value="Enviar Mensagem" />
+                <input className="w-full bg-indigo-600 md:text-base text-sm text-white uppercase py-3.5 rounded-xl font-semibold cursor-pointer mt-6 hover:bg-blue-600" type="submit" value="Enviar Mensagem" />
             </form>
         </div>
     )

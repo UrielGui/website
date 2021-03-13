@@ -94,6 +94,14 @@
   -webkit-animation-name: scroll;
   animation-name: scroll;
 }
+
+@media only screen and (max-height: 445px) {
+  .icon-scroll,
+  .icon-scroll:before {
+    display: none;
+  }
+}
+
 @-webkit-keyframes scroll {
   0% {
     opacity: 1;
@@ -318,7 +326,7 @@
 
 /* --------------- Full Page Animation --------------- */
 
-@media (min-width: 450px) {
+@media only screen and (min-height: 597px) {
   html {
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;

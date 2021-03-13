@@ -9,7 +9,9 @@ export default function Header() {
         <div className="w-full h-full absolute bg-home-background bg-no-repeat bg-cover bg-center zoombg hide-z"></div>
         <Menu />
         <TextBox />
-        <Link to="sobre"><span className="icon-scroll"></span></Link>
+        <div className="sm:contents flex justify-end sm:p-0 pr-10 sm:pb-0 pb-4">
+          <Link to="sobre"><span className="icon-scroll"></span></Link>
+        </div>
       </div>
     </section>
   )

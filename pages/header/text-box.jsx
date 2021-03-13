@@ -26,13 +26,11 @@ export default class TextBox extends Component {
                         <span id="textWriting" className="bg-black sm:bg-transparent text-uriel-blue-light"></span>
                                 </p>
                             </div>
-                            <div>
-                                <Link href="/posts/first-post">
-                                    <button className="bg-white py-2 px-4 text-3xl rounded-xl uppercase font-medium hover:bg-green-700 hover:text-white focus:outline-none">
-                                        <a>Download CV</a>
-                                    </button>
-                                </Link>
-                            </div>
+                            <Link href="/posts/first-post">
+                                <button className="bg-white py-2 px-4 text-3xl rounded-xl uppercase font-medium hover:bg-green-700 hover:text-white focus:outline-none">
+                                    <a>Download CV</a>
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
