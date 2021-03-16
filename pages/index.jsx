@@ -55,7 +55,7 @@ export default class OnePage extends React.Component {
     return (
       <>
         <Head>
-          <title>Uriel - Portfólio</title>
+          <title>Uriel - Resumo</title>
           <link rel="icon" href="/favicon.ico" />
           <meta name="description" content="Conheça o portfólio oficial do Desenvolvedor Front=End Uriel Guimarães, na qual visa sempre a inovação e a personalidade própria em seus projetos." />
         </Head>

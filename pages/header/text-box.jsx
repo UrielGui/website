@@ -22,7 +22,7 @@ export default class TextBox extends Component {
                         <span id="textWriting" className="bg-black sm:bg-transparent text-uriel-blue-light"></span>
                             </p>
                         </div>
-                        <a href="https://github.com/UrielGui" target="_blank">
+                        <a href="curriculo.pdf" target="_blank">
                             <button className="bg-white py-2 px-4 sm:text-3xl text-base rounded-xl uppercase font-medium hover:bg-green-700 hover:text-white focus:outline-none">
                                 Download CV
                                 </button>
