@@ -19,7 +19,7 @@ export default class TextBox extends Component {
                         </div>
                         <div>
                             <p className="pb-9 sm:text-2xl text-base text-white 2xl:text-4xl">E eu sou
-                        <span id="textWriting" className="bg-black sm:bg-transparent text-uriel-blue-light"></span>
+                        <span id="textWriting" className="bg-main-color sm:bg-transparent text-uriel-blue-light"></span>
                             </p>
                         </div>
                         <a href="curriculo.pdf" target="_blank">

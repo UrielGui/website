@@ -8,7 +8,6 @@ export default function Formulario() {
         nome: '',
         email: '',
         mensagem: '',
-        anexo: ''
     });
 
     function handleInputChange(event) {
@@ -23,7 +22,7 @@ export default function Formulario() {
     function send() {
         const formData = new FormData();
         Object.keys(campos).forEach(key => formData.append(key, campos[key]));
-        axios.post('http://localhost:3030/send',
+        axios.post('https://urieldev.tech/send/',
             formData,
             {
                 headers: {
@@ -43,7 +42,6 @@ export default function Formulario() {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-        // console.log(campos);
         send(campos);
         handleReset();
         successMsg();

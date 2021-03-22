@@ -13,13 +13,12 @@ export default class OnePage extends React.Component {
     super(props);
     this.state = {
       scroll: 0,
-      loading: true
     };
   }
 
   componentDidMount() {
     window.addEventListener("scroll", this.progressBar);
-    loadingTime().then(() => this.setState({ loading: false }));
+    window.addEventListener("load", this.LoadingPage);
   }
   componentWillUnmount() {
     window.removeEventListener("scroll", this.progressBar);
@@ -34,6 +33,15 @@ export default class OnePage extends React.Component {
       scroll: scroll
     });
   };
+
+  LoadingPage = () => {
+    let loadElement = document.querySelector('#page-loading');
+
+    setTimeout(() => {
+      loadElement.parentElement.removeChild(loadElement);
+    }, 4000);
+
+  }
 
   render() {
 
@@ -56,24 +64,19 @@ export default class OnePage extends React.Component {
       <>
         <Head>
           <title>Uriel - Resumo</title>
-          <link rel="icon" href="/favicon.ico" />
-          <meta name="description" content="Conheça o portfólio oficial do Desenvolvedor Front=End Uriel Guimarães, na qual visa sempre a inovação e a personalidade própria em seus projetos." />
+          <link rel="icon" href="favicon.ico" type="image/x-icon" />
+          <meta name="description" content="Conheça o portfólio oficial do Desenvolvedor Front End Uriel Guimarães, na qual visa sempre a inovação e a personalidade própria em seus projetos." />
         </Head>
-        {this.state.loading === false ? (
-          <>
-            <div className="progress-bar" style={progressMainWrapper}><div style={progressMainStyle} /></div>
-            <Header />
-            <Sobre />
-            <Habilidades />
-            <Contato />
-          </>
-        ) : (
-          <LoadingScreen />
-        )}
+        <LoadingScreen />
+        <>
+          <div className="progress-bar" style={progressMainWrapper}><div style={progressMainStyle} /></div>
+          <Header />
+          <Sobre />
+          <Habilidades />
+          <Contato />
+        </>
+        )
       </>
     )
   }
-}
-function loadingTime() {
-  return new Promise((resolve) => setTimeout(() => resolve(), 2500));
 }

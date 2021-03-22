@@ -5,8 +5,6 @@ import MenuResponsivo from './menu-responsivo';
 import { FaBars } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
 
-import Image from 'next/image'
-
 export default function Menu() {
   const [active, setActive] = useState(false);
 
@@ -27,7 +25,7 @@ export default function Menu() {
     <>
       <div className="flex pl-10 pt-7 pr-10 w-screen">
         <div className="logo sm:w-16 w-14">
-          <Image className="cursor-pointer" src="/img/logo.png" alt="Uriel - Portfolio" width={68} height={68}></Image>
+          <img className="cursor-pointer" src="/img/logo.png" alt="Uriel - Portfolio" width={68} height={68}></img>
         </div>
         <div>
           <div className="flex flex-row-reverse">

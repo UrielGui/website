@@ -13,9 +13,14 @@ export default function MenuResponsivo() {
             <Link to="contato" className="my-1.5 cursor-pointer text-gray-300 hover:text-uriel-blue-light">
                 Contato
             </Link>
-            <a href="https://github.com/UrielGui" target="_blank" className="cursor-pointer text-purple-500 hover:text-uriel-blue-light">
+            <a href="https://github.com/UrielGui" target="_blank" className="my-1.5 cursor-pointer text-purple-500 hover:text-uriel-blue-light">
                 <FaGithub className="inline mb-1 mr-px" /> GitHub
             </a><br />
+            <a href="curriculo.pdf" target="_blank">
+                <button className="bg-white py-2 px-4 sm:text-3xl text-base rounded-xl uppercase font-medium hover:bg-green-700 hover:text-white focus:outline-none">
+                    Download CV
+                                </button>
+            </a>
         </div>
     )
 }

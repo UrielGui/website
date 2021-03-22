@@ -1,11 +1,15 @@
 module.exports = {
-  purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
+  purge: [
+    './pages/**/*.jsx',
+    './components/**/*.jsx',
+    './pages/**/*.js',
+  ],
   theme: {
     keyframes: {
       pulse: {
         '10%, 90%': { opacity: '8' },
         '10%': { opacity: .9 },
-      }
+      },
     },
     inset: {
       '1/12': '25%',

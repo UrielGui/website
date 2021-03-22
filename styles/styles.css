@@ -47,6 +47,11 @@
 
 /* --------------- Text --------------- */
 
+@font-face {
+  font-family: assinatura;
+  src: url(/fonts/GreatVibes-Regular.ttf);
+}
+
 .signature {
   font-family: assinatura;
 }
@@ -174,10 +179,10 @@
   transition: all 0.3s ease-out;
 }
 .social-media .button-social-media:nth-child(1):hover .icon {
-  background: #4267b2;
+  background: #e1306c;
 }
 .social-media .button-social-media:nth-child(2):hover .icon {
-  background: #e1306c;
+  background: #4267b2;
 }
 .social-media .button-social-media:nth-child(3):hover .icon {
   background: #2b3137;
@@ -199,10 +204,10 @@
   transition: all 0.3s ease-out;
 }
 .social-media .button-social-media:nth-child(1) span {
-  color: #4267b2;
+  color: #e1306c;
 }
 .social-media .button-social-media:nth-child(2) span {
-  color: #e1306c;
+  color: #4267b2;
 }
 .social-media .button-social-media:nth-child(3) span {
   color: #2b3137;
@@ -420,7 +425,17 @@
 }
 
 .menu-mobile {
-  transition: all 3.5s ease-in;
+  animation-name: menu-mobile-fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes menu-mobile-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .menu-align {
@@ -450,6 +465,23 @@
 #page-loading {
   background: #0c0719;
   height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  animation-name: page-loading-animation;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes page-loading-animation {
+  from {
+    bottom: 0%;
+  }
+  to {
+    bottom: 100%;
+  }
 }
 
 .container-loading {
@@ -512,7 +544,8 @@
 }
 
 .progress-loading-value {
-  animation: page-load 2.5s normal forwards;
+  animation: page-load 1s normal forwards;
+  animation-delay: 2s;
   border-radius: 100px;
   background-image: linear-gradient(to right, #c824ac, #1961f9, #00d1d2);
   height: 10px;
