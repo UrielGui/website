@@ -33,6 +33,7 @@ export default function Formulario() {
     }
 
     const successMsg = () => toast.success("Obrigado! Irei retornar o mais breve ;)");
+    const errorMsg = () => toast.error("Servidor indisponível, contate-me via: contato@urieldev.tech");
 
     const handleReset = () => {
         document.getElementById('nome').value = "";
@@ -44,7 +45,7 @@ export default function Formulario() {
         event.preventDefault();
         send(campos);
         handleReset();
-        successMsg();
+        errorMsg();
     }
 
     return (

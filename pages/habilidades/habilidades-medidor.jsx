@@ -20,7 +20,7 @@ export default function HabilidadesMedidor() {
 
             <div className="sm:flex contents justify-between pt-8 pr-10">
                 <div className="sm:w-2/5 w-full pr-10 sm:pr-0">
-                    <h2 className="py-3 sm:py-0 text-white pb-1 text-xs lg:text-base md:text-base 2xl:text-2xl">JAVASCRIPT / JQUERY / AJAX</h2>
+                    <h2 className="py-3 sm:py-0 text-white pb-1 text-xs lg:text-base md:text-base 2xl:text-2xl">JAVASCRIPT / NODE</h2>
                     <div className="progress">
                         <span className="progress-value progress-value-js" />
                     </div>

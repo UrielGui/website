@@ -6,7 +6,7 @@ export default function Sobre() {
     return (
         <>
             <section id="sobre" className="h-full">
-                <div className="min-h-screen bg-sobre-background bg-no-repeat bg-cover bg-center">
+                <div className="min-h-screen overflow-auto bg-sobre-background bg-no-repeat bg-cover bg-center">
                     <LazyLoad>
                         <div className="pl-10 pt-4 md:min-h-screen">
                             <TextPage titulo="Descubra um pouco sobre mim" />
