@@ -12,18 +12,30 @@
   "dependencies": {
     "axios": "^0.21.1",
     "ityped": "^1.0.3",
+<<<<<<< HEAD
     "next": "^10.2.3",
     "react": "17.0.1",
     "react-dom": "0.0.0-ee4326357",
+=======
+    "next": "^10.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^0.0.0-fec00a869",
+>>>>>>> 4f6afa82918f9f09bae9fe526fd87c8f524e62f4
     "react-icons": "^4.2.0",
     "react-lazyload": "^3.2.0",
-    "react-scroll": "^1.8.1",
+    "react-scroll": "^1.8.2",
     "react-toastify": "^7.0.3",
+<<<<<<< HEAD
     "react-topbar-progress-indicator": "^4.1.0"
+=======
+    "react-topbar-progress-indicator": "^4.1.0",
+    "styled-components": "^5.2.2"
+>>>>>>> 4f6afa82918f9f09bae9fe526fd87c8f524e62f4
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.4",
-    "postcss": "^8.2.7",
-    "tailwindcss": "^2.0.3"
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.9",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.4"
   }
 }
