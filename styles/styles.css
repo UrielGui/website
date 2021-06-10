@@ -179,10 +179,10 @@
   transition: all 0.3s ease-out;
 }
 .social-media .button-social-media:nth-child(1):hover .icon {
-  background: #e1306c;
+  background: #4267b2;
 }
 .social-media .button-social-media:nth-child(2):hover .icon {
-  background: #4267b2;
+  background: #e1306c;
 }
 .social-media .button-social-media:nth-child(3):hover .icon {
   background: #2b3137;
@@ -204,10 +204,10 @@
   transition: all 0.3s ease-out;
 }
 .social-media .button-social-media:nth-child(1) span {
-  color: #e1306c;
+  color: #4267b2;;
 }
 .social-media .button-social-media:nth-child(2) span {
-  color: #4267b2;
+  color: #e1306c;
 }
 .social-media .button-social-media:nth-child(3) span {
   color: #2b3137;

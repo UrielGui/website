@@ -22,7 +22,7 @@ export default function Formulario() {
     function send() {
         const formData = new FormData();
         Object.keys(campos).forEach(key => formData.append(key, campos[key]));
-        axios.post('https://urieldev.tech/send/',
+        axios.post('http://localhost:3030/send',
             formData,
             {
                 headers: {
