@@ -29,7 +29,7 @@ export default function Formulario() {
                     "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
                 }
             })
-            .then(response => { /* console.log(response.data); */ })
+            .then(response => { })
     }
 
     const successMsg = () => toast.success("Obrigado! Irei retornar o mais breve ;)");
