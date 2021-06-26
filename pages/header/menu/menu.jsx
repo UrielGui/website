@@ -8,16 +8,16 @@ import { FaTimes } from 'react-icons/fa';
 export default function Menu() {
   const [active, setActive] = useState(false);
 
-  const handleClick = () => {
+  const menuMobileIcon = () => {
     setActive(!active);
   };
 
   const iconMenu = () => {
     if (!active) {
-      return <FaBars onClick={handleClick} />;
+      return <FaBars onClick={menuMobileIcon} />;
     }
     else {
-      return <FaTimes onClick={handleClick} />
+      return <FaTimes onClick={menuMobileIcon} />
     }
   }
 
@@ -43,8 +43,6 @@ export default function Menu() {
         } flex flex-col items-center bg-main-color text-xl absolute z-20 w-full lg:hidden`}>
         <MenuResponsivo />
       </div>
-
     </>
-
   )
 }
