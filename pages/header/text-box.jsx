@@ -1,18 +1,25 @@
 import React, { Component } from 'react'
 import { init } from 'ityped'
+import { AiFillFile } from 'react-icons/ai';
 
 export default class TextBox extends Component {
     componentDidMount() {
         const textWriting = document.querySelector('#textWriting')
-        init(textWriting, { showCursor: true, typeSpeed: 80, backDelay: 2500, strings: [' desenvolvedor front-end', ' ux/ui designer'] })
+        init(textWriting, { showCursor: true, typeSpeed: 80, backDelay: 2500, strings: [' desenvolvedor full stack', ' ui designer'] })
     }
     render() {
         return (
             <div className="h-full flex">
                 <div className="items-center">
                     <div className="pt-4 relative lg:top-1/12 -translate-y-1/2">
-                        <div className="pb-9">
-                            <p className="text-base sm:text-2xl 2xl:text-4xl text-white">Olá, meu nome é</p>
+                        <div className="pb-9 pt-12">
+                            <p className="text-base sm:text-2xl 2xl:text-4xl text-white">
+                                Olá <img 
+                                src="https://i.imgur.com/IkBMN2Y.png"
+                                className="inline animate-helloAnimation" 
+                                width="30px" height="30px"
+                                />, meu nome é
+                            </p>
                         </div>
                         <div className="pb-1 text-white">
                             <h1 className="text-4xl sm:text-6xl 2xl:text-8xl signature">Uriel Guimarães</h1>
@@ -23,9 +30,12 @@ export default class TextBox extends Component {
                             </p>
                         </div>
                         <a href="curriculo.pdf" target="_blank">
-                            <button className="bg-white py-2 px-4 sm:text-3xl text-base rounded-xl uppercase font-medium hover:bg-green-700 hover:text-white focus:outline-none">
-                                Download CV
-                                </button>
+                            <button className=" bg-gradient-to-r from-degrade-color1 via-degrade-color2 to-degrade-color3 py-2 px-4 sm:text-2xl rounded-xl uppercase font-medium text-white">
+                                <AiFillFile className="inline mb-1.5" /> Download CV
+                            </button>
+                            <button className="-z-1 inset-y-3 relative opacity-50 -left-60 bg-gradient-to-r from-degrade-color1 via-degrade-color2 to-degrade-color3 py-2 px-4 sm:text-2xl rounded-xl uppercase font-medium text-white">
+                                <AiFillFile className="inline mb-1.5" /> Download CV
+                            </button>
                         </a>
                     </div>
                 </div>
