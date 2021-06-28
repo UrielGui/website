@@ -23,7 +23,7 @@ export default function Menu() {
 
   return (
     <>
-      <div className="flex pl-10 pt-7 pr-10 w-screen">
+      <div className="flex pt-7 w-full">
         <div className="logo sm:w-16 w-14">
           <img className="cursor-pointer" src="/img/logo.png" alt="Uriel - Portfolio" width={68} height={68}></img>
         </div>

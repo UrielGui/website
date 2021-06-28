@@ -10,7 +10,7 @@ export default class TextBox extends Component {
         return (
             <div className="h-full flex">
                 <div className="items-center">
-                    <div className="pl-10 pt-4 relative lg:top-1/12 -translate-y-1/2">
+                    <div className="pt-4 relative lg:top-1/12 -translate-y-1/2">
                         <div className="pb-9">
                             <p className="text-base sm:text-2xl 2xl:text-4xl text-white">Olá, meu nome é</p>
                         </div>

@@ -34,14 +34,14 @@ export default class OnePage extends React.Component {
     });
   };
 
-  LoadingPage = () => {
-    let loadElement = document.querySelector('#page-loading');
+  // LoadingPage = () => {
+  //   let loadElement = document.querySelector('#page-loading');
 
-    setTimeout(() => {
-      loadElement.parentElement.removeChild(loadElement);
-    }, 4000);
+  //   setTimeout(() => {
+  //     loadElement.parentElement.removeChild(loadElement);
+  //   }, 4000);
 
-  }
+  // }
 
   render() {
 
@@ -63,11 +63,11 @@ export default class OnePage extends React.Component {
     return (
       <>
         <Head>
-          <title>Uriel - Resumo</title>
+          <title>Uriel - Portfólio</title>
           <link rel="icon" href="favicon.ico" type="image/x-icon" />
-          <meta name="description" content="Conheça o portfólio oficial do Desenvolvedor Front End Uriel Guimarães, na qual visa sempre a inovação e a personalidade própria em seus projetos." />
+          <meta name="description" content="Portfólio oficial do Desenvolvedor Full Stack e UI Designer Uriel Guimarães, na qual visa sempre a inovação e a personalidade própria em seus projetos." />
         </Head>
-        <LoadingScreen />
+        {/* <LoadingScreen /> */}
         <>
           <div className="progress-bar" style={progressMainWrapper}><div style={progressMainStyle} /></div>
           <Header />

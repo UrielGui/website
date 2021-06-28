@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   purge: [
     './pages/**/*.jsx',
@@ -32,5 +34,15 @@ module.exports = {
     }
   },
   variants: {},
-  plugins: [],
-}
+  plugins: [
+    plugin(function ({ addComponents }) {
+      const container = {
+        '.container': {
+          padding: '0 2.5rem 0 2.5rem',
+        },
+      };
+
+      addComponents(container);
+    })
+  ],
+};
