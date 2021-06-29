@@ -4,7 +4,7 @@ import PortfolioGallery from './portfolioGallery'
 export default function Portfolio() {
     return (
         <>
-            <section className="h-full">
+            <section id="portfolio" className="h-full">
                 <div className="bg-background-about bg-no-repeat bg-cover bg-center">
                         <div className="mainContainer pt-4 pb-14">
                             <TextPage title="Meus trabalhos recentes" />

@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from "react-scroll";
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { FaDribbble } from 'react-icons/fa';
@@ -15,18 +15,18 @@ export default function Footer() {
                     </div>
                     <div className="flex justify-center md:justify-start md:pt-0 pt-4">
                         <div className="flex ">
-                            <span className="bg-white text-black text-xl p-2.5 rounded-xl cursor-pointer hover:bg-blue-600 hover:text-white mr-4">
+                            <a href="https://www.linkedin.com/in/urielgui" target="_blank" className="bg-white text-black text-xl p-2.5 rounded-xl cursor-pointer hover:bg-blue-600 hover:text-white mr-4">
                                 <FaLinkedinIn />
-                            </span>
-                            <span className="bg-white text-black text-2xl p-2.5 rounded-xl cursor-pointer hover:bg-purple-600 hover:text-white mr-4">
+                            </a>
+                            <a href="https://github.com/UrielGui" target="_blank" className="bg-white text-black text-2xl p-2.5 rounded-xl cursor-pointer hover:bg-purple-600 hover:text-white mr-4">
                                 <FaGithub />
-                            </span>
-                            <span className="bg-white text-black text-2xl p-2.5 rounded-xl cursor-pointer hover:bg-pink-600 hover:text-white mr-4">
+                            </a>
+                            <a href="https://dribbble.com/UrielGui" target="_blank" className="bg-white text-black text-2xl p-2.5 rounded-xl cursor-pointer hover:bg-pink-600 hover:text-white mr-4">
                                 <FaDribbble />
-                            </span>
-                            <span className="bg-white text-black text-2xl p-2.5 rounded-xl cursor-pointer hover:bg-green-600 hover:text-white mr-4">
+                            </a>
+                            <Link to="contact" smooth={true} className="bg-white text-black text-2xl p-2.5 rounded-xl cursor-pointer hover:bg-green-600 hover:text-white mr-4">
                                 <AiOutlineMail />
-                            </span>
+                            </Link>
                         </div>
                     </div>
                     </div>

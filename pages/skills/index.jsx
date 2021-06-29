@@ -3,7 +3,7 @@ import SkillsProgress from './skillsProgress'
 
 export default function SkillSection() {
     return (
-        <section>
+        <section id="skills">
             <div className="bg-skills bg-no-repeat bg-cover bg-center bg-fixed">
                 <div className="mainContainer pt-4 pb-10">
                     <TextPage title="Confira minhas habilidades" />
