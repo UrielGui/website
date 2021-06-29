@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         ...theme('colors'),
-        'home-background': "url('/img/background/bg-home.png')",
+        'header-background': "url('/img/background/bg-home.png')",
         'sobre-background': "url('/img/background/bg-sobre.png')",
         'sobre-foto': "url('/img/background/sobre-foto.png')",
         'habilidades-background': "url('/img/background/bg-habilidades.png')",
@@ -28,6 +28,9 @@ module.exports = {
       zIndex: {
         '-1': '-1',
       },
+      backgroundSize: {
+        'header-size': '110%',
+      },
       keyframes: {
         wheelAnimation: {
           '0%': { opacity: '0', top: '2px' },
@@ -40,11 +43,16 @@ module.exports = {
           '50%': { transform: 'rotate(0deg)' },
           '75%': { transform: 'rotate(-20deg)' },
           '100%': { transform: 'rotate(0deg)' }
+        },
+        zoomBgAnimation: {
+          '0%': { backgroundSize: '110%' },
+          '100%': { backgroundSize: '100%' }
         }
       },
       animation: {
         wheelAnimation: 'wheelAnimation 2s infinite',
         helloAnimation: 'helloAnimation 3s infinite',
+        zoomBgAnimation: 'zoomBgAnimation 12s infinite alternate',
       }
     }
   },
@@ -56,7 +64,6 @@ module.exports = {
           padding: '0 2.5rem 0 2.5rem',
         },
       };
-
       addComponents(container);
     })
   ],
