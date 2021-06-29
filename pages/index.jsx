@@ -9,6 +9,7 @@ import Skills from './skills/'
 import MoreSkills from './moreSkills/'
 import Portfolio from './portfolio/'
 import Contact from './contact/'
+import Footer from './footer/'
 
 export default class OnePage extends React.Component {
 
@@ -80,8 +81,8 @@ export default class OnePage extends React.Component {
           <MoreSkills />
           <Portfolio />
           <Contact />
+          <Footer />
         </>
-        )
       </>
     )
   }
