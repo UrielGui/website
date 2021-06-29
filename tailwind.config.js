@@ -28,6 +28,9 @@ module.exports = {
       zIndex: {
         '-1': '-1',
       },
+      width: {
+        '3/7': '43%',
+      },
       backgroundSize: {
         'header-size': '110%',
       },
@@ -170,7 +173,11 @@ module.exports = {
           backgroundImage: 'linear-gradient(to right, #c824ac, #1961f9, #00d1d2)',
           height: '15px',
           width: '0'
-        }
+        },
+        '.portfolio-active-menu': {
+          background: '#065f46',
+          borderRadius: '10px'
+        },
       };
       addComponents(main);
     })

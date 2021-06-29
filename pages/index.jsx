@@ -7,6 +7,7 @@ import About from './about/'
 import AboutProject from './aboutProject/'
 import Skills from './skills/'
 import MoreSkills from './moreSkills/'
+import Portfolio from './portfolio/'
 import Contact from './contact/'
 
 export default class OnePage extends React.Component {
@@ -18,13 +19,13 @@ export default class OnePage extends React.Component {
     };
   }
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.progressBar);
-    window.addEventListener("load", this.LoadingPage);
-  }
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.progressBar);
-  }
+  // componentDidMount() {
+  //   window.addEventListener("scroll", this.progressBar);
+  //   window.addEventListener("load", this.LoadingPage);
+  // }
+  // componentWillUnmount() {
+  //   window.removeEventListener("scroll", this.progressBar);
+  // }
 
   progressBar = () => {
     const scrollTotal = document.documentElement.scrollTop;
@@ -77,6 +78,7 @@ export default class OnePage extends React.Component {
           <AboutProject />
           <Skills />
           <MoreSkills />
+          <Portfolio />
           <Contact />
         </>
         )
