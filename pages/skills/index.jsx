@@ -5,7 +5,7 @@ export default function SkillSection() {
     return (
         <section>
             <div className="bg-skills bg-no-repeat bg-cover bg-center bg-fixed">
-                <div className="container pt-4 pb-10">
+                <div className="mainContainer pt-4 pb-10">
                     <TextPage title="Confira minhas habilidades" />
                     <div className="flex justify-center sm:mt-20 mt-10">
                         <h1 className="text-white sm:text-3xl text-2xl 2xl:text-4xl">Conhecimento Profissional</h1>

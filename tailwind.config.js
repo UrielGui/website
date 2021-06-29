@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         ...theme('colors'),
-        'header-background': "url('/img/background/bg-home.png')",
+        'header': "url('/img/background/bg-home.png')",
         'background-about': "url('/img/background/bg-sobre.png')",
         'picture-about': "url('/img/background/about-picture.png')",
         'skills': "url('/img/background/bg-habilidades.png')",
@@ -27,6 +27,7 @@ module.exports = {
       },
       zIndex: {
         '-1': '-1',
+        '-10': '-10',
       },
       width: {
         '3/7': '43%',
@@ -155,8 +156,9 @@ module.exports = {
   plugins: [
     plugin(function ({ addComponents }) {
       const main = {
-        '.container': {
-          margin: '0 2.5rem 0 2.5rem',
+        '.mainContainer': {
+          paddingRight: '2.5rem',
+          paddingLeft: '2.5rem',
         },
         '.progress': {
           background: 'rgb(255, 255, 255)',

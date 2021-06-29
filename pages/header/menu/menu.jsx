@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import DesktopMenu from './desktop-menu';
-import ResponsiveMenu from './responsive-menu';
+import DesktopMenu from './desktopMenu';
+import ResponsiveMenu from './responsiveMenu';
 
 import { FaBars } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
@@ -25,11 +25,11 @@ export default function Menu() {
     <>
       <div className="flex pt-7 w-full">
         <div className="sm:w-16 w-14">
-          <img className="cursor-pointer" src="/img/logo.png" alt="Uriel - Portfolio" width={68} height={68}></img>
+          <img className="cursor-pointer z-50" src="/img/logo.png" alt="Uriel - Portfolio" width={68} height={68}></img>
         </div>
         <div>
           <div className="flex flex-row-reverse">
-            <div className="text-3xl text-white cursor-pointer menu-icon-r-align absolute right-0-menu pr-10 lg:hidden" >
+            <div className="text-3xl text-white cursor-pointer menu-icon-r-align absolute right-0-menu  lg:hidden" >
               {iconMenu()}
             </div>
           </div>

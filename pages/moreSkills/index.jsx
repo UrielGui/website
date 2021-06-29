@@ -10,7 +10,7 @@ export default function MoreSkills() {
     return (
         <>
             <section className="bg-purple-800 mt-10">
-                <div className="container pt-8 pb-8">
+                <div className="mainContainer pt-8 pb-8">
                     <div className="flex justify-center flex-wrap">
                         <span className="bg-main-color text-white text-5xl p-4 hover:bg-white hover:text-main-color mr-4">
                             <FiFigma />

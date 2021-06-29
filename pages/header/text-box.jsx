@@ -11,8 +11,8 @@ export default class TextBox extends Component {
         return (
             <div className="flex">
                 <div className="items-center">
-                    <div className="pt-4 relative lg:top-1/12 -translate-y-1/2">
-                        <div className="pb-9 pt-12">
+                    <div className="pt-4 pb-4 relative lg:top-1/12 -translate-y-1/2">
+                        <div className="pb-9 pt-4 sm:pt-12">
                             <p className="text-base sm:text-2xl 2xl:text-4xl text-white">
                                 Olá <img 
                                 src="/img/hello.png"
@@ -26,11 +26,11 @@ export default class TextBox extends Component {
                         </div>
                         <div>
                             <p className="my-1.5 pb-9 sm:text-2xl text-base text-white 2xl:text-4xl">E eu sou
-                        <span id="textWriting" className="bg-main-color sm:bg-transparent text-uriel-blue-light"></span>
+                        <span id="textWriting" className="text-uriel-blue-light"></span>
                             </p>
                         </div>
                         <a href="curriculo.pdf" target="_blank">
-                            <button className=" bg-gradient-to-r from-degrade-color1 via-degrade-color2 to-degrade-color3 py-2 px-4 sm:text-2xl rounded-xl uppercase font-medium text-white">
+                            <button className="bg-gradient-to-r from-degrade-color1 via-degrade-color2 to-degrade-color3 py-2 px-4 sm:text-xl xl:text-2xl rounded-xl uppercase font-medium text-white">
                                 <AiFillFile className="inline mb-1.5" /> Download CV
                             </button>
                         </a>

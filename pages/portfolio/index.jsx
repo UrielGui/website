@@ -7,7 +7,7 @@ export default function Portfolio() {
         <>
             <section className="h-full">
                 <div className="bg-background-about bg-no-repeat bg-cover bg-center">
-                        <div className="container pt-4 pb-14">
+                        <div className="mainContainer pt-4 pb-14">
                             <TextPage title="Meus trabalhos recentes" />
                             <div className="flex justify-center sm:mt-20 mt-10">
                         <h1 className="text-white sm:text-3xl text-2xl 2xl:text-4xl">Projetos Recentes</h1>

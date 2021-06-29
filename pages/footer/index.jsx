@@ -8,7 +8,7 @@ export default function Footer() {
     return (
         <>
             <section className="bg-purple-800">
-                <div className="container pt-4 pb-4 text-white">
+                <div className="mainContainer pt-4 pb-4 text-white">
                     <div className="flex">
                     <div className="flex-grow self-center">
                         © 2021 - Desenvolvido por Uriel Guimarães

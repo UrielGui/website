@@ -3,7 +3,7 @@ import React from "react";
 export default function Loading() {
     return (
         <div id="page-loading">
-            <div className="container-loading">
+            <div className="mainContainer-loading">
                 <div className="boxColor-loading">
                     <div className="box-loading" />
                 </div>
