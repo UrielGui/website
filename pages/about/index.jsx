@@ -1,4 +1,3 @@
-import LazyLoad from 'react-lazyload';
 import TextPage from '../../components/text-page'
 import About from './about'
 
@@ -7,7 +6,6 @@ export default function SectionAbout() {
         <>
             <section className="h-full">
                 <div className="bg-background-about bg-no-repeat bg-cover bg-center">
-                    <LazyLoad>
                         <div className="container pt-4">
                             <TextPage title="Descubra um pouco sobre mim" />
                             <div className="flex flex-col md:flex-row md:space-x-12">
@@ -16,7 +14,6 @@ export default function SectionAbout() {
                                 <About />
                             </div>
                         </div>
-                    </LazyLoad>
                 </div>
             </section>
         </>

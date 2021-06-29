@@ -1,8 +1,8 @@
-import LazyLoad from 'react-lazyload';
+
 
 export default function SkillsProgress() {
     return (
-        <LazyLoad>
+        <>
             <div className="sm:flex contents justify-between pt-8 pr-10">
                 <div className="sm:w-2/5 w-full pr-10 sm:pr-0">
                     <h2 className="py-3 sm:py-0 text-white pb-1 text-xs lg:text-base md:text-base 2xl:text-2xl">HTML / CSS</h2>
@@ -77,6 +77,6 @@ export default function SkillsProgress() {
                     <div className="sm:pb-0 pb-6"></div>
                 </div>
             </div>
-        </LazyLoad>
+        </>
     )
 }

@@ -16,7 +16,6 @@
     "react": "17.0.1",
     "react-dom": "0.0.0-ee4326357",
     "react-icons": "^4.2.0",
-    "react-lazyload": "^3.2.0",
     "react-scroll": "^1.8.2",
     "react-toastify": "^7.0.3",
     "react-topbar-progress-indicator": "^4.1.0"
