@@ -47,7 +47,7 @@ export default function PortfolioGallery() {
             }
           }).slice(0, 4).map((product, a, b) => {
             return (
-                <div className="w-3/7 mt-10 three mb-8">
+                <div key={product.id} className="w-3/7 mt-10 three mb-8">
                     <div className="flex w-full p-6 bg-green-800 text-white">
                    <div className="w-1/2">
                        <div className="pr-5">
