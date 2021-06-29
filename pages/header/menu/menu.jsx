@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import MenuDesktop from './menu-desktop';
-import MenuResponsivo from './menu-responsivo';
+import DesktopMenu from './desktop-menu';
+import ResponsiveMenu from './responsive-menu';
 
 import { FaBars } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
@@ -34,14 +34,13 @@ export default function Menu() {
             </div>
           </div>
           <nav className="ml-10 2xl:text-2xl menu-align space-x-10 uppercase font-semibold lg:absolute lg:block hidden" >
-            <MenuDesktop />
+            <DesktopMenu />
           </nav>
         </div>
       </div>
-
       <div className={`${active ? '' : 'hidden'
         } flex flex-col items-center bg-main-color text-xl absolute z-20 w-full lg:hidden`}>
-        <MenuResponsivo />
+        <ResponsiveMenu />
       </div>
     </>
   )
