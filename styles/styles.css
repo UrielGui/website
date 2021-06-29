@@ -347,12 +347,6 @@
 
 /* --------------------------------- */
 
-.logo:hover {
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-  transform: rotateY(180deg);
-}
-
 .menu-mobile {
   animation-name: menu-mobile-fadeIn;
   animation-duration: 1s;

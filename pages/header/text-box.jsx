@@ -15,7 +15,7 @@ export default class TextBox extends Component {
                         <div className="pb-9 pt-12">
                             <p className="text-base sm:text-2xl 2xl:text-4xl text-white">
                                 Olá <img 
-                                src="https://i.imgur.com/IkBMN2Y.png"
+                                src="/img/hello.png"
                                 className="inline animate-helloAnimation" 
                                 width="30px" height="30px"
                                 />, meu nome é
@@ -25,7 +25,7 @@ export default class TextBox extends Component {
                             <h1 className="text-4xl sm:text-6xl 2xl:text-8xl signature">Uriel Guimarães</h1>
                         </div>
                         <div>
-                            <p className="pb-9 sm:text-2xl text-base text-white 2xl:text-4xl">E eu sou
+                            <p className="my-1.5 pb-9 sm:text-2xl text-base text-white 2xl:text-4xl">E eu sou
                         <span id="textWriting" className="bg-main-color sm:bg-transparent text-uriel-blue-light"></span>
                             </p>
                         </div>
