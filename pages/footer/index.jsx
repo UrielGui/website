@@ -8,13 +8,13 @@ export default function Footer() {
     return (
         <>
             <section className="bg-purple-800">
-                <div className="mainContainer pt-4 pb-4 text-white">
-                    <div className="flex">
-                    <div className="flex-grow self-center">
+                <div className="mainContainer pt-4 md:mt-0 mt-8 pb-4 text-white">
+                    <div className="flex flex-col md:flex-row">
+                    <div className="flex-grow self-center sm:text-base text-xs">
                         © 2021 - Desenvolvido por Uriel Guimarães
                     </div>
-                    <div className="">
-                        <div className="flex">
+                    <div className="flex justify-center md:justify-start md:pt-0 pt-4">
+                        <div className="flex ">
                             <span className="bg-white text-black text-xl p-2.5 rounded-xl cursor-pointer hover:bg-blue-600 hover:text-white mr-4">
                                 <FaLinkedinIn />
                             </span>

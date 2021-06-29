@@ -60,7 +60,6 @@ export default function SkillsProgress() {
                     <div className="progress">
                         <span className="progress-value animate-apiProgressValue" />
                     </div>
-                    <div className="sm:pb-0 pb-6"></div>
                 </div>
             </div><div className="sm:flex contents justify-between pt-8 ">
                 <div className="sm:w-2/5 w-full  sm:pr-0">

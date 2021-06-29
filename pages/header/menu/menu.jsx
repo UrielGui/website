@@ -29,7 +29,7 @@ export default function Menu() {
         </div>
         <div>
           <div className="flex flex-row-reverse">
-            <div className="text-3xl text-white cursor-pointer menu-icon-r-align absolute right-0-menu  lg:hidden" >
+            <div className="text-3xl mainContainer text-white cursor-pointer menu-icon-r-align absolute right-0 lg:hidden" >
               {iconMenu()}
             </div>
           </div>

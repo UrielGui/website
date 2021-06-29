@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import TextPage from '../../components/text-page'
 import PortfolioGallery from './portfolioGallery'
 
