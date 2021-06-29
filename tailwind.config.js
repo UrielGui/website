@@ -11,8 +11,8 @@ module.exports = {
       backgroundImage: theme => ({
         ...theme('colors'),
         'header-background': "url('/img/background/bg-home.png')",
-        'sobre-background': "url('/img/background/bg-sobre.png')",
-        'sobre-foto': "url('/img/background/sobre-foto.png')",
+        'background-about': "url('/img/background/bg-sobre.png')",
+        'picture-about': "url('/img/background/about-picture.png')",
         'habilidades-background': "url('/img/background/bg-habilidades.png')",
         'contato-2-background': "url('/img/background/bg-contato-2.png')",
         'contato-background': "url('/img/background/bg-contato.png')",

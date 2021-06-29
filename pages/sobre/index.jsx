@@ -1,19 +1,19 @@
 import LazyLoad from 'react-lazyload';
 import TextPage from '../../components/text-page'
-import Apresentacao from './apresentacao'
+import About from './about'
 
-export default function Sobre() {
+export default function AboutSection() {
     return (
         <>
-            <section id="sobre" className="h-full">
-                <div className="min-h-screen bg-sobre-background bg-no-repeat bg-cover bg-center">
+            <section className="h-full">
+                <div className="bg-background-about bg-no-repeat bg-cover bg-center">
                     <LazyLoad>
                         <div className="pl-10 pt-4 md:min-h-screen">
                             <TextPage titulo="Descubra um pouco sobre mim" />
                             <div className="flex flex-col md:flex-row md:space-x-12">
-                                <div className="bg-sobre-foto bg-no-repeat bg-center bg-contain w-full md:w-1/3 md:mt-10 rounded-3xl s-bg-1 s-bg-2">
+                                <div className="bg-picture-about bg-no-repeat bg-center bg-contain w-full md:w-1/3 md:mt-10 rounded-3xl s-bg-1 s-bg-2">
                                 </div>
-                                <Apresentacao />
+                                <About />
                             </div>
                         </div>
                     </LazyLoad>

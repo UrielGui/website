@@ -1,52 +1,23 @@
-import { FaFacebookF } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
-import { FaEnvelope } from 'react-icons/fa';
-import { Link } from "react-scroll";
+import { FaDribbble } from 'react-icons/fa';
+import { AiOutlineMail } from 'react-icons/ai';
 
 export default function SocialMedia() {
   return (
-    <div className="social-media flex justify-center sm:mt-7 mt-2">
-      <div className="button-social-media">
-        <a href="https://www.facebook.com/uriel.guimaraes.14/" target="_blank">
-          <div className="icon p-4">
-            <i className="flex justify-center items-center">
-              <FaFacebookF />
-            </i>
-          </div>
-          <span>Facebook</span>
-        </a>
-      </div>
-      <div className="button-social-media">
-        <a href="https://www.instagram.com/urieleffe/" target="_blank">
-          <div className="icon p-4">
-            <i className="flex justify-center items-center">
-              <FaInstagram />
-            </i>
-          </div>
-          <span>Instagram</span>
-        </a>
-      </div>
-      <div className="button-social-media">
-        <a href="https://github.com/UrielGui/" target="_blank">
-          <div className="icon p-4">
-            <i className="flex justify-center items-center">
-              <FaGithub />
-            </i>
-          </div>
-          <span>GitHub</span>
-        </a>
-      </div>
-      <div className="button-social-media">
-        <Link to="contato">
-          <div className="icon p-4">
-            <i className="flex justify-center items-center">
-              <FaEnvelope />
-            </i>
-          </div>
-          <span>Contato</span>
-        </Link>
-      </div>
+    <div className="flex sm:mt-7 mt-2">
+      <span className="bg-blue-600 text-white text-2xl p-4 rounded-xl cursor-pointer hover:bg-white hover:text-black mr-4">
+        <FaLinkedinIn />
+      </span>
+      <span className="bg-purple-600 text-white text-2xl p-4 rounded-xl cursor-pointer hover:bg-white hover:text-black mr-4">
+        <FaGithub />
+      </span>
+      <span className="bg-pink-600 text-white text-2xl p-4 rounded-xl cursor-pointer hover:bg-white hover:text-black mr-4">
+        <FaDribbble />
+      </span>
+      <span className="bg-green-600 text-white text-2xl p-4 rounded-xl cursor-pointer hover:bg-white hover:text-black mr-4">
+        <AiOutlineMail />
+      </span>
     </div>
   )
 }
