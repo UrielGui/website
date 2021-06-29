@@ -3,9 +3,10 @@ import Head from 'next/head'
 import LoadingScreen from './loading'
 
 import Header from './header/'
-import Sobre from './sobre/'
-import Habilidades from './habilidades/'
-import Contato from './contato/'
+import About from './about/'
+import AboutProject from './aboutProject/'
+import Skills from './skills/'
+import Contact from './contact/'
 
 export default class OnePage extends React.Component {
 
@@ -71,9 +72,10 @@ export default class OnePage extends React.Component {
         <>
           <div className="progress-bar" style={progressMainWrapper}><div style={progressMainStyle} /></div>
           <Header />
-          <Sobre />
-          <Habilidades />
-          <Contato />
+          <About />
+          <AboutProject />
+          <Skills />
+          <Contact />
         </>
         )
       </>
