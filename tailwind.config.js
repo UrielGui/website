@@ -61,7 +61,7 @@ module.exports = {
     plugin(function ({ addComponents }) {
       const container = {
         '.container': {
-          padding: '0 2.5rem 0 2.5rem',
+          margin: '0 2.5rem 0 2.5rem',
         },
       };
       addComponents(container);

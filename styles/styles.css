@@ -81,17 +81,6 @@
   padding-top: 2rem;
 }
 
-/* --------------- Social Media --------------- */
-
-@media only screen and (max-width: 340px) {
-  .sobre-texto {
-    font-size: 14px;
-  }
-  .s-bg-1 {
-    height: 10rem;
-  }
-}
-
 /* --------------- Progress Bar --------------- */
 
 .progress {
