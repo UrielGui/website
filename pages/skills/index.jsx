@@ -1,14 +1,14 @@
 import TextPage from '../../components/text-page'
 import HabilidadesMedidor from './habilidades-medidor'
 
-export default function Habilidades() {
+export default function Skills() {
     return (
-        <section id="habilidades" className="h-full">
-            <div className="min-h-screen bg-habilidades-background bg-no-repeat bg-cover bg-center bg-fixed">
-                <div className="pl-10 pt-4 md:min-h-screen">
+        <section>
+            <div className="bg-skills bg-no-repeat bg-cover bg-center bg-fixed">
+                <div className="container pt-4 pb-10">
                     <TextPage titulo="Confira minhas habilidades" />
                     <div className="flex justify-center sm:mt-20 mt-10">
-                        <h1 className="text-white sm:text-3xl text-2xl 2xl:text-4xl">Experiência de Trabalho</h1>
+                        <h1 className="text-white sm:text-3xl text-2xl 2xl:text-4xl">Conhecimento Profissional</h1>
                     </div>
                     <div className="flex justify-center">
                         <div className="border-bottom-white"></div>

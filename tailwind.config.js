@@ -13,7 +13,7 @@ module.exports = {
         'header-background': "url('/img/background/bg-home.png')",
         'background-about': "url('/img/background/bg-sobre.png')",
         'picture-about': "url('/img/background/about-picture.png')",
-        'habilidades-background': "url('/img/background/bg-habilidades.png')",
+        'skills': "url('/img/background/bg-habilidades.png')",
         'contato-2-background': "url('/img/background/bg-contato-2.png')",
         'contato-background': "url('/img/background/bg-contato.png')",
       }),
@@ -47,24 +47,132 @@ module.exports = {
         zoomBgAnimation: {
           '0%': { backgroundSize: '110%' },
           '100%': { backgroundSize: '100%' }
+        },
+        // Skils
+        htmlProgressValue: {
+          '0%': {
+            width: '0'
+          },
+          '100%': {
+            width: '98%'
+          }
+        },
+        uiProgressValue: {
+          '0%': {
+            width: '0'
+          },
+          '100%': {
+            width: '89%'
+          }
+        },
+        jsProgressValue: {
+          '0%': {
+            width: '0'
+          },
+          '100%': {
+            width: '74%'
+          }
+        },
+        nodeProgressValue: {
+          '0%': {
+            width: '0'
+          },
+          '100%': {
+            width: '40%'
+          }
+        },
+        reactProgressValue: {
+          '0%': {
+            width: '0'
+          },
+          '100%': {
+            width: '72%'
+          }
+        },
+        nextProgressValue: {
+          '0%': {
+            width: '0'
+          },
+          '100%': {
+            width: '70%'
+          }
+        },
+        sassProgressValue: {
+          '0%': {
+            width: '0'
+          },
+          '100%': {
+            width: '92%'
+          }
+        },
+        apiProgressValue: {
+          '0%': {
+            width: '0'
+          },
+          '100%': {
+            width: '32%'
+          }
+        },
+        bootstrapProgressValue: {
+          '0%': {
+            width: '0'
+          },
+          '100%': {
+            width: '94%'
+          }
+        },
+        sqlProgressValue: {
+          '0%': {
+            width: '0'
+          },
+          '100%': {
+            width: '36%'
+          }
         }
       },
       animation: {
         wheelAnimation: 'wheelAnimation 2s infinite',
         helloAnimation: 'helloAnimation 3s infinite',
         zoomBgAnimation: 'zoomBgAnimation 12s infinite alternate',
+        // Skills
+        htmlProgressValue: 'htmlProgressValue 3s normal forwards',
+        uiProgressValue: 'uiProgressValue 3s normal forwards',
+        jsProgressValue: 'jsProgressValue 3s normal forwards',
+        nodeProgressValue: 'nodeProgressValue 3s normal forwards',
+        reactProgressValue: 'reactProgressValue 3s normal forwards',
+        nextProgressValue: 'nextProgressValue 3s normal forwards',
+        sassProgressValue: 'sassProgressValue 3s normal forwards',
+        apiProgressValue: 'apiProgressValue 3s normal forwards',
+        bootstrapProgressValue: 'bootstrapProgressValue 3s normal forwards',
+        sqlProgressValue: 'sqlProgressValue 3s normal forwards',
       }
     }
   },
   variants: {},
   plugins: [
     plugin(function ({ addComponents }) {
-      const container = {
+      const main = {
         '.container': {
           margin: '0 2.5rem 0 2.5rem',
         },
+        '.progress': {
+          background: 'rgb(255, 255, 255)',
+          justifyContent: 'flex-start',
+          borderRadius: '100px',
+          alignItems: 'center',
+          position: 'relative',
+          display: 'flex',
+          height: '15px',
+        },
+        '.progress-value': {
+          boxShadow: '0 10px 40px -10px rgb(255, 255, 255)',
+          borderRadius: '100px',
+          backgroundImage: 'linear-gradient(to right, #c824ac, #1961f9, #00d1d2)',
+          height: '15px',
+          width: '0'
+        }
       };
-      addComponents(container);
+      addComponents(main);
     })
   ],
 };
