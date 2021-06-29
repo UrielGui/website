@@ -50,11 +50,13 @@ export default function PortfolioGallery() {
                 <div key={product.id} className="w-3/7 mt-10 three mb-8">
                     <div className="flex w-full p-6 bg-green-800 text-white">
                    <div className="w-1/2">
-                       <div className="pr-5">
+                       <div className="pr-4">
                         <div className="text-2xl">{product.title}</div>
-                        <div className="mt-5 text-xs">{product.description}</div>
-                        <div className="mt-5">{product.technologies}</div>
-                        <button className="mt-5 uppercase bg-main-color p-2.5 rounded-lg px-6 hover:bg-white hover:text-main-color">{product.more}</button>
+                        <div className="mt-5 text-xs ">{product.description}</div>
+                        <div className="mt-5 text-sm">{product.technologies}</div>
+                        <a href={product.link} target="_blank">
+                          <button className="mt-5 uppercase bg-main-color p-2.5 rounded-lg px-6 hover:bg-white hover:text-main-color">{product.more}</button>
+                        </a>
                         </div>
                    </div>
                    <div className="w-1/2">
