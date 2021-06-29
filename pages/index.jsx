@@ -6,6 +6,7 @@ import Header from './header/'
 import About from './about/'
 import AboutProject from './aboutProject/'
 import Skills from './skills/'
+import MoreSkills from './moreSkills/'
 import Contact from './contact/'
 
 export default class OnePage extends React.Component {
@@ -75,6 +76,7 @@ export default class OnePage extends React.Component {
           <About />
           <AboutProject />
           <Skills />
+          <MoreSkills />
           <Contact />
         </>
         )

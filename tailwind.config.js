@@ -78,7 +78,7 @@ module.exports = {
             width: '0'
           },
           '100%': {
-            width: '40%'
+            width: '45%'
           }
         },
         reactProgressValue: {
