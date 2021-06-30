@@ -28,11 +28,11 @@ export default function Menu() {
         </div>
         <div>
           <div className="flex flex-row-reverse">
-            <div className="text-3xl mainContainer text-white cursor-pointer menu-icon-r-align absolute right-0 lg:hidden" >
+            <div className="text-3xl mainContainer text-white cursor-pointer top-10 absolute right-0 lg:hidden" >
               {iconMenu()}
             </div>
           </div>
-          <nav className="ml-10 2xl:text-2xl menu-align space-x-10 uppercase font-semibold lg:absolute lg:block hidden" >
+          <nav className="ml-10 2xl:text-2xl top-12 space-x-10 uppercase font-semibold lg:absolute lg:block hidden" >
             <DesktopMenu />
           </nav>
         </div>

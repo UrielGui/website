@@ -5,7 +5,7 @@ import { AiFillFile } from 'react-icons/ai';
 export default class TextBox extends Component {
     componentDidMount() {
         const textWriting = document.querySelector('#textWriting')
-        init(textWriting, { showCursor: true, typeSpeed: 80, backDelay: 2500, strings: [' desenvolvedor full stack', ' ui designer'] })
+        init(textWriting, { showCursor: false, typeSpeed: 80, backDelay: 2500, strings: [' desenvolvedor full stack', ' ui designer'] })
     }
     render() {
         return (
@@ -26,7 +26,7 @@ export default class TextBox extends Component {
                         </div>
                         <div>
                             <p className="my-1.5 pb-9 sm:text-2xl text-base text-white 2xl:text-4xl">E eu sou
-                        <span id="textWriting" className="text-uriel-blue-light"></span>
+                        <span id="textWriting" className="text-uriel-blue-light animate-blink"></span>
                             </p>
                         </div>
                         <a href="curriculo.pdf" target="_blank">

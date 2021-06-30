@@ -3,7 +3,7 @@ import { FaGithub } from 'react-icons/fa';
 
 export default function ResponsiveMenu() {
     return (
-        <div className="flex flex-col p-8 pt-14 leading-loose menu-mobile ">
+        <div className="flex flex-col p-8 pt-14 leading-loose animate-fadeinMobileMenu">
             <Link to="about" smooth={true} className="cursor-pointer text-gray-300 hover:text-uriel-blue-light">
                 Sobre
             </Link>

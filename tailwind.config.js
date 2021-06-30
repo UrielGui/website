@@ -54,95 +54,60 @@ module.exports = {
           '75%': { transform: 'rotate(-20deg)' },
           '100%': { transform: 'rotate(0deg)' }
         },
+        fadeinMobileMenu: {
+          'from': { opacity: '0', },
+          'to': { opacity: '1', }
+        },
         zoomBgAnimation: {
           '0%': { backgroundSize: '110%' },
           '100%': { backgroundSize: '100%' }
         },
         // Skils
         htmlProgressValue: {
-          '0%': {
-            width: '0'
-          },
-          '100%': {
-            width: '98%'
-          }
+          '0%': { width: '0' },
+          '100%': { width: '98%' }
         },
         uiProgressValue: {
-          '0%': {
-            width: '0'
-          },
-          '100%': {
-            width: '89%'
-          }
+          '0%': { width: '0' },
+          '100%': { width: '89%' }
         },
         jsProgressValue: {
-          '0%': {
-            width: '0'
-          },
-          '100%': {
-            width: '74%'
-          }
+          '0%': { width: '0' },
+          '100%': { width: '74%' }
         },
         nodeProgressValue: {
-          '0%': {
-            width: '0'
-          },
-          '100%': {
-            width: '45%'
-          }
+          '0%': { width: '0' },
+          '100%': { width: '45%' }
         },
         reactProgressValue: {
-          '0%': {
-            width: '0'
-          },
-          '100%': {
-            width: '72%'
-          }
+          '0%': { width: '0' },
+          '100%': { width: '72%' }
         },
         nextProgressValue: {
-          '0%': {
-            width: '0'
-          },
-          '100%': {
-            width: '70%'
-          }
+          '0%': { width: '0' },
+          '100%': { width: '70%' }
         },
         sassProgressValue: {
-          '0%': {
-            width: '0'
-          },
-          '100%': {
-            width: '92%'
-          }
+          '0%': { width: '0' },
+          '100%': { width: '92%' }
         },
         apiProgressValue: {
-          '0%': {
-            width: '0'
-          },
-          '100%': {
-            width: '32%'
-          }
+          '0%': { width: '0' },
+          '100%': { width: '32%' }
         },
         bootstrapProgressValue: {
-          '0%': {
-            width: '0'
-          },
-          '100%': {
-            width: '94%'
-          }
+          '0%': { width: '0' },
+          '100%': { width: '94%' }
         },
         sqlProgressValue: {
-          '0%': {
-            width: '0'
-          },
-          '100%': {
-            width: '36%'
-          }
+          '0%': { width: '0' },
+          '100%': { width: '36%' }
         }
       },
       animation: {
         wheelAnimation: 'wheelAnimation 2s infinite',
         helloAnimation: 'helloAnimation 3s infinite',
+        fadeinMobileMenu: 'fadeinMobileMenu 1s',
         zoomBgAnimation: 'zoomBgAnimation 12s infinite alternate',
         // Skills
         htmlProgressValue: 'htmlProgressValue 3s normal forwards',
@@ -162,6 +127,46 @@ module.exports = {
   plugins: [
     plugin(function ({ addComponents }) {
       const main = {
+        ':root': {
+          backgroundColor: '#070218'
+        },
+        '*:focus': {
+          outline: 'none'
+        },
+
+        '::-webkit-scrollbar': {
+          width: '8px',
+        },
+        '::-webkit-scrollbar-track': {
+          background: '#0c0719',
+        },
+        '::-webkit-scrollbar-thumb': {
+          backgroundImage: 'linear-gradient(#c824ac, #1961f9, #00d1d2)',
+        },
+        '::-webkit-scrollbar-thumb:hover': {
+          backgroundImage: 'linear-gradient(#ad1895, #134ecc, #0cb3b3)',
+        },
+
+        '@font-face': {
+          fontFamily: 'assinatura',
+          src: 'url(/fonts/GreatVibes-Regular.ttf)',
+        },
+        '.signature': {
+          fontFamily: 'assinatura',
+        },
+
+        '.ityped-cursor': {
+          color: '#6CD7E8',
+          animation: '1s blink step-end infinite'
+        },
+
+        '.Toastify__toast--success': {
+          background: '#007965 !important',
+          fontFamily: 'inherit !important',
+          padding: '2px 10px !important',
+          fontSize: '0.96rem'
+        },
+
         '.mainContainer': {
           paddingRight: '2.5rem',
           paddingLeft: '2.5rem',
