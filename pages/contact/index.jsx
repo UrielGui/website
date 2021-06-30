@@ -2,7 +2,7 @@ import Form from './form';
 
 export default function Contact() {
     return (
-        <section id="contact">
+        <section id="contact" className="pt-8">
             <div className="bg-contact bg-no-repeat bg-cover bg-center">
                     <div className="flex">
                         <div className="md:w-1/2">

@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head'
 import LoadingScreen from './loading'
 
-import OnScroll from '../components/Scroll/onScroll'
+import OnScroll from '../components/scroll/onScroll'
 import Header from './header/'
 import About from './about/'
 import AboutProject from './aboutProject/'

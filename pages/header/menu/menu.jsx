@@ -5,14 +5,14 @@ import { FaBars } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
 
 export default function Menu() {
-  const [active, setActive] = useState(false);
+  const [activeMobile, setActiveMobile] = useState(false);
 
   const iconMobileMenu = () => {
-    setActive(!active);
+    setActiveMobile(!activeMobile);
   };
 
   const iconMenu = () => {
-    if (!active) {
+    if (!activeMobile) {
       return <FaBars onClick={iconMobileMenu} />
     }
     else {
@@ -24,7 +24,7 @@ export default function Menu() {
     <>
       <div className="flex pt-7 w-full px-10">
         <div className="sm:w-16 w-14">
-          <img className="cursor-pointer z-50" src="/img/logo.png" alt="Uriel - Portfolio" width={68} height={68}></img>
+          <img className="z-50" src="/img/logo.png" alt="Uriel - Portfolio" width={68} height={68}></img>
         </div>
         <div>
           <div className="flex flex-row-reverse">
@@ -37,7 +37,7 @@ export default function Menu() {
           </nav>
         </div>
       </div>
-      <div className={`${active ? '' : 'hidden'
+      <div className={`${activeMobile ? '' : 'hidden'
         } flex flex-col items-center bg-main-color text-xl absolute z-20 w-full lg:hidden`}>
         <ResponsiveMenu />
       </div>

@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 export default function Header() {
   return (
     <section id="header">
-        <div className="md:bg-header bg-no-repeat bg-header-size animate-zoomBgAnimation">
+        <div className="md:bg-header bg-no-repeat bg-cover animate-zoomBgAnimation">
         <Menu />
         <div className="mainContainer">
           <TextBox />
