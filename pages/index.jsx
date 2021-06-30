@@ -17,16 +17,26 @@ export default class OnePage extends React.Component {
     super(props);
     this.state = {
       scroll: 0,
+      className: 'hidden'
     };
   }
 
-  // componentDidMount() {
-  //   window.addEventListener("scroll", this.progressBar);
-  //   window.addEventListener("load", this.LoadingPage);
-  // }
-  // componentWillUnmount() {
-  //   window.removeEventListener("scroll", this.progressBar);
-  // }
+  handleScroll() { 
+    if (document.documentElement.scrollTop > 540) {
+       this.setState({
+         className: 'show'
+       })
+     } 
+   }
+
+  componentDidMount() {
+    // window.addEventListener("scroll", this.progressBar);
+    // window.addEventListener("load", this.LoadingPage);
+    window.onscroll = () => this.handleScroll()
+  }
+  componentWillUnmount() {
+    // window.removeEventListener("scroll", this.progressBar);
+  }
 
   progressBar = () => {
     const scrollTotal = document.documentElement.scrollTop;

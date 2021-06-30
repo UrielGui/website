@@ -36,16 +36,16 @@ export default function PortfolioGallery() {
 
       const items = () => (
         <>
-          {Data.products.sort((a, b) =>
-            a.description > b.description ? 1 : -1
-          ).filter((val) => {
+          {Data.products.filter((val) => {
             if (categoryProduct === "all") {
               return val.category;
             }
             else {
               return val.category === categoryProduct;
             }
-          }).slice(0, 4).map((product, a, b) => {
+          }).sort((a, b) =>
+          a.description > b.description ? 1 : -1
+        ).slice(0, 4).map((product, a, b) => {
             return (
                 <div key={product.id} className="lg:w-3/7 mt-10 three mb-8">
                     <div className="flex w-full p-6 bg-green-800 text-white sm:flex-row flex-col-reverse">
