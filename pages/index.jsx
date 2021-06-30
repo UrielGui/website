@@ -17,36 +17,20 @@ export default class OnePage extends React.Component {
     super(props);
     this.state = {
       scroll: 0,
-      className: 'hidden'
     };
   }
 
-  handleScroll() { 
-    if (document.documentElement.scrollTop > 540) {
-       this.setState({
-         className: 'show'
-       })
-     } 
-   }
-
   componentDidMount() {
-    // window.addEventListener("scroll", this.progressBar);
-    // window.addEventListener("load", this.LoadingPage);
-    window.onscroll = () => this.handleScroll()
+    window.onscroll = function () {
+      var winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    var height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById('scroll-indicator').style.width = scrolled + '%';
+    };
   }
-  componentWillUnmount() {
-    // window.removeEventListener("scroll", this.progressBar);
-  }
-
-  progressBar = () => {
-    const scrollTotal = document.documentElement.scrollTop;
-    const heightWin = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scroll = `${scrollTotal / heightWin * 100}%`;
-
-    this.setState({
-      scroll: scroll
-    });
-  };
 
   // LoadingPage = () => {
   //   let loadElement = document.querySelector('#page-loading');
@@ -59,21 +43,6 @@ export default class OnePage extends React.Component {
 
   render() {
 
-    const progressMainWrapper = {
-      height: "5px",
-      position: "fixed",
-      top: 0,
-      left: 0,
-      zIndex: 101,
-      width: "100%"
-    };
-
-    const progressMainStyle = {
-      height: "5px",
-      background: "linear-gradient(to right, #c824ac, #1961f9, #00d1d2)",
-      width: this.state.scroll
-    };
-
     return (
       <>
         <Head>
@@ -83,7 +52,9 @@ export default class OnePage extends React.Component {
         </Head>
         {/* <LoadingScreen /> */}
         <>
-          <div className="progress-bar" style={progressMainWrapper}><div style={progressMainStyle} /></div>
+          <div className="fixed top-0 w-full bg-transparent">
+				      <div className="h-2 bg-gradient-to-r from-degrade-color1 via-degrade-color2 to-degrade-color3" id="scroll-indicator"></div>
+		      </div>
           <Header />
           <About />
           <AboutProject />

@@ -1,0 +1,14 @@
+
+
+.progress-bar {
+    height: 8px;
+    background: #04aa6d;
+    width: 0%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+}

@@ -1,6 +1,6 @@
 
 
-export default function SkillsProgress() {
+export default function SkillsProgress(props) {
     return (
         <>
             <div className="sm:flex contents justify-between pt-8 ">
