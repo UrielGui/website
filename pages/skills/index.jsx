@@ -1,4 +1,4 @@
-import TextPage from '../../components/text-page'
+import TextPage from '../../components/textPage'
 import SkillsProgress from './skillsProgress'
 
 export default function SkillSection() {

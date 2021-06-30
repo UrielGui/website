@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Head from 'next/head'
 import LoadingScreen from './loading'
 
@@ -11,38 +11,22 @@ import Portfolio from './portfolio/'
 import Contact from './contact/'
 import Footer from './footer/'
 
-export default class OnePage extends React.Component {
+export default function OnePage() {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      scroll: 0,
-    };
-  }
+  function scrollIndicator () {
+    const winScroll =
+    document.body.scrollTop || document.documentElement.scrollTop;
+    const height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+  document.getElementById('scroll-indicator').style.width = scrolled + '%';
+  };
 
-  componentDidMount() {
-    window.onscroll = function () {
-      var winScroll =
-      document.body.scrollTop || document.documentElement.scrollTop;
-    var height =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById('scroll-indicator').style.width = scrolled + '%';
-    };
-  }
-
-  // LoadingPage = () => {
-  //   let loadElement = document.querySelector('#page-loading');
-
-  //   setTimeout(() => {
-  //     loadElement.parentElement.removeChild(loadElement);
-  //   }, 4000);
-
-  // }
-
-  render() {
-
+    useEffect(() => {
+      window.onscroll = scrollIndicator;
+    })
+    
     return (
       <>
         <Head>
@@ -53,7 +37,7 @@ export default class OnePage extends React.Component {
         {/* <LoadingScreen /> */}
         <>
           <div className="fixed top-0 w-full bg-transparent">
-				      <div className="h-2 bg-gradient-to-r from-degrade-color1 via-degrade-color2 to-degrade-color3" id="scroll-indicator"></div>
+				      <div className="w-0 h-2 bg-gradient-to-r from-degrade-color1 via-degrade-color2 to-degrade-color3" id="scroll-indicator"></div>
 		      </div>
           <Header />
           <About />
@@ -66,5 +50,4 @@ export default class OnePage extends React.Component {
         </>
       </>
     )
-  }
 }

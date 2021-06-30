@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import SocialMedia from '../components/social-media';
+import SocialMedia from '../components/socialMedia';
 
 export default function Custom404() {
     return (

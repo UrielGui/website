@@ -1,4 +1,4 @@
-import SocialMedia from '../../components/social-media';
+import SocialMedia from '../../components/socialMedia';
 
 export default function About() {
     return (
