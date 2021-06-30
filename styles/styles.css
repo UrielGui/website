@@ -6,22 +6,6 @@
   outline: none;
 }
 
-/* --------------- Sizes --------------- */
-
-.s-bg-1 {
-  height: 14rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .s-bg-2 {
-    height: 32rem;
-  }
-}
-
-.habilidades-titulo {
-  letter-spacing: 0.4em;
-}
-
 /* --------------- Scroll Bar --------------- */
 
 /* width */
@@ -66,19 +50,6 @@
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1),
     0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
     0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* --------------- Border Bottom --------------- */
-
-.border-bottom-blue-light {
-  border-bottom: 3px solid #6cd7e8;
-  width: 10em;
-  padding-top: 0.6rem;
-}
-.border-bottom-white {
-  border-bottom: 3px solid #fff;
-  width: 10em;
-  padding-top: 2rem;
 }
 
 /* --------------- Blinking cursor --------------- */

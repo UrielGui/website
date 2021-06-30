@@ -1,29 +1,28 @@
 import { useState } from 'react';
 import DesktopMenu from './desktopMenu';
 import ResponsiveMenu from './responsiveMenu';
-
 import { FaBars } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
 
 export default function Menu() {
   const [active, setActive] = useState(false);
 
-  const menuMobileIcon = () => {
+  const iconMobileMenu = () => {
     setActive(!active);
   };
 
   const iconMenu = () => {
     if (!active) {
-      return <FaBars onClick={menuMobileIcon} />;
+      return <FaBars onClick={iconMobileMenu} />
     }
     else {
-      return <FaTimes onClick={menuMobileIcon} />
+      return <FaTimes onClick={iconMobileMenu} />
     }
   }
 
   return (
     <>
-      <div className="flex pt-7 w-full">
+      <div className="flex pt-7 w-full px-10">
         <div className="sm:w-16 w-14">
           <img className="cursor-pointer z-50" src="/img/logo.png" alt="Uriel - Portfolio" width={68} height={68}></img>
         </div>

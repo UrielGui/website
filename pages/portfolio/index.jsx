@@ -15,7 +15,7 @@ export default function Portfolio() {
                         <div className="border-bottom-white"></div>
                     </div>
                     <div className="flex justify-center">
-                        <div className="text-gray-200 text-opacity-60 sm:text-lg text-xs pt-5 habilidades-titulo 2xl:text-2xl">PORTFÓLIO</div>
+                        <div className="text-gray-200 text-opacity-60 sm:text-lg text-xs pt-5 tracking-subtitle 2xl:text-2xl">PORTFÓLIO</div>
                     </div>
                         <PortfolioGallery />
                         </div>

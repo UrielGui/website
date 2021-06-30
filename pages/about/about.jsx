@@ -13,7 +13,9 @@ export default function About() {
                 <span className="text-white">Conheço a área do desenvolvimento web desde o final de 2013. Trabalhei em alguns projetos no front-end até 2017, e em 2019 tomei a decisão de me aprofundar de vez nesse mercado.
                     </span>
             </div>
-            <SocialMedia />
+            <div className="flex justify-center md:justify-start">
+                <SocialMedia />
+            </div>
         </div>
     )
 }

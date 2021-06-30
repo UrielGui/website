@@ -6,8 +6,8 @@ export default function Header() {
   return (
     <section id="header">
         <div className="md:bg-header bg-no-repeat bg-header-size animate-zoomBgAnimation">
+        <Menu />
         <div className="mainContainer">
-          <Menu />
           <TextBox />
         </div>
             <div className="flex flex-col items-end sm:items-center xl:pt-24 pb-8 m-auto mainContainer">

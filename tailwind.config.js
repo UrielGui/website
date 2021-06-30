@@ -14,8 +14,8 @@ module.exports = {
         'background-about': "url('/img/background/bg-sobre.png')",
         'picture-about': "url('/img/background/about-picture.png')",
         'skills': "url('/img/background/bg-habilidades.png')",
-        'contato-2-background': "url('/img/background/bg-contato-2.png')",
-        'contato-background': "url('/img/background/bg-contato.png')",
+        'contact': "url('/img/background/bg-contato.png')",
+        'contact-2': "url('/img/background/bg-contato-2.png')",
       }),
       colors: {
         'uriel-blue-light': '#6CD7E8',
@@ -29,11 +29,17 @@ module.exports = {
         '-1': '-1',
         '-10': '-10',
       },
+      height: {
+        '32': '32rem',
+      },
       width: {
         '3/7': '43%',
       },
       backgroundSize: {
         'header-size': '110%',
+      },
+      letterSpacing: {
+        'subtitle': '0.4em',
       },
       keyframes: {
         wheelAnimation: {
@@ -179,6 +185,16 @@ module.exports = {
         '.portfolio-active-menu': {
           background: '#065f46',
           borderRadius: '10px'
+        },
+        '.border-bottom-blue-light': {
+          borderBottom: '3px solid #6cd7e8',
+          width: '10em',
+          paddingTop: '0.6rem',
+        },
+        '.border-bottom-white': {
+          borderBottom: '3px solid #fff',
+          width: '10em',
+          paddingTop: '2rem',
         },
       };
       addComponents(main);

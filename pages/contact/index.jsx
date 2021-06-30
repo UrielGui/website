@@ -3,7 +3,7 @@ import Form from './form';
 export default function Contact() {
     return (
         <section id="contact">
-            <div className="bg-contato-background bg-no-repeat bg-cover bg-center">
+            <div className="bg-contact bg-no-repeat bg-cover bg-center">
                     <div className="flex">
                         <div className="md:w-1/2">
                             <div className="md:py-16 py-3">
@@ -14,7 +14,7 @@ export default function Contact() {
                                 </div>
                             </div>
                         </div>
-                        <div className="md:w-1/2 md:bg-contato-2-background md:bg-no-repeat md:bg-cover md:bg-center"></div>
+                        <div className="md:w-1/2 md:bg-contact-2 md:bg-no-repeat md:bg-cover md:bg-center"></div>
                     </div>
             </div>
         </section>
