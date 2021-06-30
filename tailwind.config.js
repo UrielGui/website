@@ -20,7 +20,7 @@ module.exports = {
       colors: {
         'uriel-blue-light': '#6CD7E8',
         'main-color': '#0C0719',
-        'main-color-2': '#261F39',
+        'main-color-2': '#311e61',
         'degrade-color1': '#c824ac',
         'degrade-color2': '#1961f9',
         'degrade-color3': '#00d1d2',

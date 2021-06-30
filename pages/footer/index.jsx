@@ -7,7 +7,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 export default function Footer() {
     return (
         <>
-            <section className="bg-purple-800">
+            <section className="bg-main-color-2">
                 <div className="mainContainer pt-4 md:mt-0 mt-8 pb-4 text-white">
                     <div className="flex flex-col md:flex-row">
                     <div className="flex-grow self-center sm:text-base text-xs">

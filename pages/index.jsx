@@ -91,7 +91,7 @@ export default function OnePage() {
                       Contato
                     </Link>
                   </div>
-                  <div className="text-3xl mainContainer text-white cursor-pointer top-10 absolute right-0 lg:hidden" >
+                  <div className="text-3xl mainContainer text-white cursor-pointer top-7 absolute right-0 lg:hidden" >
                     {iconMenu()}
                   </div>
                 </div>
