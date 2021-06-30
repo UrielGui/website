@@ -16,9 +16,9 @@ export default function ResponsiveMenu() {
                 Contato
             </Link><br />
             <a href="curriculo.pdf" target="_blank">
-                <button className="bg-white py-2 px-4 sm:text-3xl text-base rounded-xl uppercase font-medium hover:bg-green-700 hover:text-white focus:outline-none">
+                <button className="bg-white py-2 text-black px-4 sm:text-3xl text-base rounded-xl uppercase font-medium hover:bg-green-700 hover:text-white focus:outline-none">
                     Download CV
-                                </button>
+                </button>
             </a>
         </div>
     )

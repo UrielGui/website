@@ -201,6 +201,9 @@ module.exports = {
           width: '10em',
           paddingTop: '2rem',
         },
+        '#navScroll': {
+          transition: 'top 0.3s'
+        },
       };
       addComponents(main);
     })
