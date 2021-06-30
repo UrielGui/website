@@ -18,19 +18,15 @@ import Footer from './footer/'
 
 export default function OnePage() {
 
-  const [active, setActive] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(false);
 
   const iconMobileMenu = () => {
-    setActive(!active);
+    setActiveMenu(!activeMenu);
   };
 
   const iconMenu = () => {
-    if (!active) {
-      return <FaBars onClick={iconMobileMenu} />
-    }
-    else {
-      return <FaTimes onClick={iconMobileMenu} />
-    }
+    if (!activeMenu) { return <FaBars onClick={iconMobileMenu} /> }
+    else { return <FaTimes onClick={iconMobileMenu} /> }
   }
 
   function onScroll () {
@@ -42,12 +38,15 @@ export default function OnePage() {
     document.documentElement.clientHeight;
     const scrolled = (winScroll / height) * 100;
     document.getElementById('scroll-indicator').style.width = scrolled + '%';
-
     // Menu
-    if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
-      document.getElementById("navScroll").style.top = "0";
+    if(!activeMenu) {
+      if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90 ) {
+        document.getElementById("navScroll").style.top = "0";
+      } else {
+        document.getElementById("navScroll").style.top = "-7rem";
+      }
     } else {
-      document.getElementById("navScroll").style.top = "-150px";
+      document.getElementById("navScroll").style.top = "0";
     }
   };
 
@@ -64,7 +63,7 @@ export default function OnePage() {
       </Head>
       {/* <LoadingScreen /> */}
       <>
-        <div id="navScroll" className="bg-main-color-2 fixed z-30 block w-full">
+        <div id="navScroll" className="bg-main-color-2 -top-28 fixed z-30 block w-full">
           <div className="mainContainer pt-4 pb-4 text-white">
             <div className="flex flex-col md:flex-row">
               <div className="flex-grow self-center sm:text-base text-xs">
@@ -95,16 +94,15 @@ export default function OnePage() {
                     {iconMenu()}
                   </div>
                 </div>
-                <div className={`${active ? '' : 'hidden'} flex mt-16 flex-col items-center bg-main-color text-xl absolute z-20 w-full lg:hidden`}>
-                    <ResponsiveMenu />
-                  </div>
               </div>
+          </div>
+          <div className={`${activeMenu ? '' : 'hidden'} flex flex-col items-center bg-main-color text-xl absolute z-20 w-full lg:hidden`}>
+            <ResponsiveMenu />
           </div>
         </div>
         <div className="fixed z-40 top-0 w-full bg-transparent">
             <div className="w-0 h-1 bg-gradient-to-r from-degrade-color1 via-degrade-color2 to-degrade-color3" id="scroll-indicator"></div>
         </div>
-
         <Header />
         <About />
         <AboutProject />
