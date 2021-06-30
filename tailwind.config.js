@@ -11,7 +11,7 @@ module.exports = {
       backgroundImage: theme => ({
         ...theme('colors'),
         'header': "url('/img/background/bg-home.png')",
-        'background-about': "url('/img/background/bg-sobre.png')",
+        'about': "url('/img/background/bg-sobre.png')",
         'picture-about': "url('/img/background/about-picture.png')",
         'skills': "url('/img/background/bg-habilidades.png')",
         'contact': "url('/img/background/bg-contato.png')",
@@ -44,7 +44,7 @@ module.exports = {
       keyframes: {
         wheelAnimation: {
           '0%': { opacity: '0', top: '2px' },
-          '50%': { opacity: '1', top: '50%' },
+          '50%': { opacity: '1', top: '20px' },
           '100%': { opacity: '0', top: '33px' }
         },
         helloAnimation: {

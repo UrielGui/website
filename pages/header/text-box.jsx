@@ -13,7 +13,7 @@ export default class TextBox extends Component {
                 <div className="items-center">
                     <div className="pt-4 pb-4 relative lg:top-1/12 -translate-y-1/2">
                         <div className="pb-9 pt-4 sm:pt-12">
-                            <p className="text-base sm:text-2xl 2xl:text-4xl text-white">
+                            <p className="text-base sm:text-2xl text-white">
                                 Olá <img 
                                 src="/img/hello.png"
                                 className="inline animate-helloAnimation" 
@@ -22,15 +22,15 @@ export default class TextBox extends Component {
                             </p>
                         </div>
                         <div className="pb-1 text-white">
-                            <h1 className="text-4xl sm:text-6xl 2xl:text-8xl signature">Uriel Guimarães</h1>
+                            <h1 className="text-4xl sm:text-6xl signature">Uriel Guimarães</h1>
                         </div>
                         <div>
-                            <p className="my-1.5 pb-9 sm:text-2xl text-base text-white 2xl:text-4xl">E eu sou
+                            <p className="my-1.5 pb-9 sm:text-2xl text-base text-white ">E eu sou
                         <span id="textWriting" className="text-uriel-blue-light animate-blink"></span>
                             </p>
                         </div>
                         <a href="curriculo.pdf" target="_blank">
-                            <button className="bg-gradient-to-r from-degrade-color1 via-degrade-color2 to-degrade-color3 py-2 px-4 sm:text-xl xl:text-2xl rounded-xl uppercase font-medium text-white">
+                            <button className="bg-gradient-to-r from-degrade-color1 via-degrade-color2 to-degrade-color3 py-2 px-4 sm:text-xl xl:text-2xl rounded-xl uppercase font-medium text-white hover:opacity-80">
                                 <AiFillFile className="inline mb-1.5" /> Download CV
                             </button>
                         </a>

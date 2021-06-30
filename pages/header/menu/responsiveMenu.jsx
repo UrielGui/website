@@ -1,5 +1,4 @@
 import { Link } from "react-scroll";
-import { FaGithub } from 'react-icons/fa';
 
 export default function ResponsiveMenu() {
     return (

@@ -32,7 +32,7 @@ export default function Menu() {
               {iconMenu()}
             </div>
           </div>
-          <nav className="ml-10 2xl:text-2xl top-12 space-x-10 uppercase font-semibold lg:absolute lg:block hidden" >
+          <nav className="ml-10  top-12 space-x-10 uppercase font-semibold lg:absolute lg:block hidden" >
             <DesktopMenu />
           </nav>
         </div>

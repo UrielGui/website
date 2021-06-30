@@ -5,7 +5,7 @@ export default function SectionAbout() {
     return (
         <>
             <section id="about">
-                <div className="bg-background-about bg-no-repeat bg-cover bg-center">
+                <div className="bg-about bg-no-repeat bg-cover bg-center">
                         <div className="mainContainer pt-4">
                             <TextPage title="Descubra um pouco sobre mim" />
                             <div className="flex flex-col md:flex-row md:space-x-12">
