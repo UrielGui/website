@@ -10,12 +10,11 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         ...theme('colors'),
-        'header': "url('/img/background/bg-home.png')",
-        'about': "url('/img/background/bg-sobre.png')",
+        'header': "url('/img/background/header.png')",
+        'about': "url('/img/background/about.png')",
         'picture-about': "url('/img/background/about-picture.png')",
-        'skills': "url('/img/background/bg-habilidades.png')",
-        'contact': "url('/img/background/bg-contato.png')",
-        'contact-2': "url('/img/background/bg-contato-2.png')",
+        'skills': "url('/img/background/skills.png')",
+        'contact': "url('/img/background/contact.png')",
       }),
       colors: {
         'uriel-blue-light': '#6CD7E8',
