@@ -34,9 +34,6 @@ module.exports = {
       width: {
         '3/7': '43%',
       },
-      backgroundSize: {
-        'header-size': '110%',
-      },
       letterSpacing: {
         'subtitle': '0.4em',
       },
@@ -127,7 +124,6 @@ module.exports = {
         '*:focus': {
           outline: 'none'
         },
-
         '::-webkit-scrollbar': {
           width: '8px',
         },

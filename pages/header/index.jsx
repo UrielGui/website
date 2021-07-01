@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <section id="header">
       <FadeIn>
-          <div className="md:bg-header bg-no-repeat bg-cover animate-zoomBgAnimation">
+          <div className="md:bg-header bg-no-repeat animate-zoomBgAnimation">
           <Menu />
           <div className="mainContainer">
             <TextBox />
