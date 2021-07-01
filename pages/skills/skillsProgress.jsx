@@ -1,3 +1,4 @@
+import React from 'react';
 import SkillsAnimation from '../../components/animations/skillsAnimation'
 
 export default function SkillsProgress() {

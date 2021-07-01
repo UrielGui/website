@@ -5,7 +5,6 @@ import LoadingScreen from './loading'
 import OnScroll from '../components/scroll/onScroll'
 import Header from './header/'
 import About from './about/'
-import AboutProject from './aboutProject/'
 import Skills from './skills/'
 import MoreSkills from './moreSkills/'
 import Portfolio from './portfolio/'
@@ -26,7 +25,6 @@ export default function OnePage() {
         <OnScroll />
         <Header />
         <About />
-        <AboutProject />
         <Skills />
         <MoreSkills />
         <Portfolio />

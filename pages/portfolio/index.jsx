@@ -1,3 +1,4 @@
+import React from 'react';
 import TextPage from '../../components/textPage'
 import PortfolioGallery from './portfolioGallery'
 import RotateInScroll from '../../components/animations/rotateInScroll'

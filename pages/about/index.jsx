@@ -1,3 +1,4 @@
+import React from 'react';
 import TextPage from '../../components/textPage'
 import About from './about'
 import ZoomInScroll from '../../components/animations/zoomInScroll'

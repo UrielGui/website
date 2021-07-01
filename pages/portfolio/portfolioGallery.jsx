@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Data from './data';
+import Data from '../../components/data';
 
 export default function PortfolioGallery() {
 

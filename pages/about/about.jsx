@@ -1,3 +1,4 @@
+import React from 'react';
 import SocialMedia from '../../components/socialMedia';
 
 export default function About() {

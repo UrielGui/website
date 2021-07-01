@@ -1,3 +1,4 @@
+import React from 'react';
 import Menu from './menu/menu';
 import TextBox from './text-box';
 import { Link } from "react-scroll";
