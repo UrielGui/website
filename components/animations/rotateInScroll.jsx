@@ -19,8 +19,9 @@ export default function ZoomInWhenVisible({ children }) {
         initial="hidden"
         transition={{ duration: 0.6 }}
         variants={{
-            hidden: { opacity: 0, },
-            visible: { opacity: 1, }
+            hidden: { opacity: 0, rotateX: 60 },
+            visible: { opacity: 1, rotateX: 0 }
+            
         }}
       >
         {children}
