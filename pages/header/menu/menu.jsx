@@ -3,6 +3,7 @@ import DesktopMenu from './desktopMenu';
 import ResponsiveMenu from './responsiveMenu';
 import { FaBars } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
+import { motion } from "framer-motion"
 
 export default function Menu() {
   const [activeMobile, setActiveMobile] = useState(false);
@@ -24,7 +25,12 @@ export default function Menu() {
     <>
       <div className="flex pt-7 w-full px-10">
         <div className="sm:w-16 w-14">
-          <img className="z-50" src="/img/logo.png" alt="Uriel - Portfolio" width={68} height={68}></img>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <img className="z-50" src="/img/logo.png" alt="Uriel - Portfolio" width={68} height={68}></img>
+          </motion.button>
         </div>
         <div>
           <div className="flex flex-row-reverse">

@@ -1,11 +1,13 @@
 import TextPage from '../../components/textPage'
 import About from './about'
+import ZoomInScroll from '../../components/animations/zoomInScroll'
 
 export default function SectionAbout() {
     return (
         <>
             <section id="about">
-                <div className="bg-about bg-no-repeat bg-cover bg-center">
+                <ZoomInScroll>
+                    <div className="bg-about bg-no-repeat bg-cover bg-center">
                         <div className="mainContainer pt-4">
                             <TextPage title="Descubra um pouco sobre mim" />
                             <div className="flex flex-col md:flex-row md:space-x-12">
@@ -14,7 +16,8 @@ export default function SectionAbout() {
                                 <About />
                             </div>
                         </div>
-                </div>
+                    </div>
+                </ZoomInScroll>
             </section>
         </>
     )

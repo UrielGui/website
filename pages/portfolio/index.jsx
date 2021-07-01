@@ -1,5 +1,6 @@
 import TextPage from '../../components/textPage'
 import PortfolioGallery from './portfolioGallery'
+import RotateInScroll from '../../components/animations/rotateInScroll'
 
 export default function Portfolio() {
     return (
@@ -17,7 +18,9 @@ export default function Portfolio() {
                     <div className="flex justify-center">
                         <div className="text-gray-200 text-opacity-60 sm:text-lg text-xs pt-5 tracking-subtitle ">PORTFÓLIO</div>
                     </div>
-                        <PortfolioGallery />
+                        <RotateInScroll>
+                            <PortfolioGallery />
+                        </RotateInScroll>
                         </div>
                 </div>
             </section>

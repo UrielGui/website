@@ -54,10 +54,6 @@ module.exports = {
           '75%': { transform: 'rotate(-20deg)' },
           '100%': { transform: 'rotate(0deg)' }
         },
-        fadeinMobileMenu: {
-          'from': { opacity: '0', },
-          'to': { opacity: '1', }
-        },
         zoomBgAnimation: {
           '0%': { backgroundSize: '110%' },
           '100%': { backgroundSize: '100%' }
@@ -107,7 +103,6 @@ module.exports = {
       animation: {
         wheelAnimation: 'wheelAnimation 2s infinite',
         helloAnimation: 'helloAnimation 3s infinite',
-        fadeinMobileMenu: 'fadeinMobileMenu 1s',
         zoomBgAnimation: 'zoomBgAnimation 12s infinite alternate',
         // Skills
         htmlProgressValue: 'htmlProgressValue 3s normal forwards',

@@ -1,9 +1,9 @@
 import React from 'react';
+import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import ResponsiveMenu from '../../pages/header/menu/responsiveMenu';
 
 export default function menuScroll(props) {
-
   const activeMenu = "text-uriel-blue-light";
 
   return (
@@ -13,9 +13,14 @@ export default function menuScroll(props) {
               <div className="flex">
                 <div className="flex-grow sm:text-base text-xs">
                     <Link to="header" smooth={true} >
+                    <motion.button
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                    >
                       <img className="z-50 cursor-pointer" src="/img/logo.png" alt="Uriel - Portfolio"
                       width={50} height={50}>
                       </img>
+                      </motion.button>
                     </Link>
                 </div>
                     <div className="hidden lg:flex pt-4 uppercase text-sm">

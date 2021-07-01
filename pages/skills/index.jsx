@@ -2,6 +2,7 @@ import TextPage from '../../components/textPage'
 import SkillsProgress from './skillsProgress'
 
 export default function SkillSection() {
+
     return (
         <section id="skills">
             <div className="bg-skills bg-no-repeat bg-cover bg-center bg-fixed">
@@ -16,7 +17,7 @@ export default function SkillSection() {
                     <div className="flex justify-center">
                         <div className="text-gray-200 text-opacity-60 sm:text-lg text-xs pt-5 tracking-subtitle ">HABILIDADES</div>
                     </div>
-                    <SkillsProgress />
+                        <SkillsProgress />
                 </div>
             </div>
         </section>

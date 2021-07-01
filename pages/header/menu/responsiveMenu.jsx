@@ -1,9 +1,25 @@
+import React from 'react'
 import { Link } from "react-scroll";
+import FadeIn from '../../../components/animations/menuAnimation'
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from "react-intersection-observer";
 
 export default function ResponsiveMenu(props) {
-    
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
     return (
-        <div className="flex flex-col p-8 pt-14 leading-loose animate-fadeinMobileMenu">
+        <FadeIn>
+            <motion.div
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        transition={{ duration: 0.6 }}
+        variants={{
+            hidden: { opacity: 0, },
+            visible: { opacity: 1, }
+        }}
+      >
+        <div className="flex flex-col p-8 pt-14 leading-loose">
             <Link activeClass={props.activeMenu} to="about" smooth={true} spy={true} className="cursor-pointer text-gray-300 hover:text-uriel-blue-light">
                 Sobre
             </Link>
@@ -22,5 +38,7 @@ export default function ResponsiveMenu(props) {
                 </button>
             </a>
         </div>
+        </motion.div>
+        </FadeIn>
     )
 }
