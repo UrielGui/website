@@ -1,12 +1,18 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { motion } from "framer-motion"
 import DesktopMenu from './desktopMenu';
 import ResponsiveMenu from './responsiveMenu';
 import { FaBars } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
-import { motion } from "framer-motion"
 
 export default function Menu() {
   const [activeMobile, setActiveMobile] = useState(false);
+
+  const variants = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "-100%" },
+    exit: { opacity: 1, x:"-100%" }
+  }
 
   const iconMobileMenu = () => {
     setActiveMobile(!activeMobile);
@@ -33,6 +39,7 @@ export default function Menu() {
           </motion.button>
         </div>
         <div>
+          
           <div className="flex flex-row-reverse">
             <div className="text-3xl mainContainer text-white cursor-pointer top-10 absolute right-0 lg:hidden" >
               {iconMenu()}
@@ -45,7 +52,14 @@ export default function Menu() {
       </div>
       <div className={`${activeMobile ? '' : 'hidden'
         } flex flex-col items-center bg-main-color text-xl absolute z-20 w-full lg:hidden`}>
-        <ResponsiveMenu />
+            <motion.nav
+              animate={activeMobile ? "open" : "closed"}
+              variants={variants}
+              transition={{ duration: 0.6 }}
+              exit={{ opacity: 1, x:"-100%" }}
+          >
+              <ResponsiveMenu />
+          </motion.nav>
       </div>
     </>
   )
