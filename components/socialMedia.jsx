@@ -17,7 +17,7 @@ export default function SocialMedia() {
       <a href="https://dribbble.com/UrielGui" target="_blank" className="bg-pink-600 text-white sm:text-2xl p-4 rounded-xl cursor-pointer hover:bg-white hover:text-black mr-4">
         <FaDribbble />
       </a>
-      <Link to="contact" smooth={true} className="bg-green-600 text-white sm:text-2xl p-4 rounded-xl cursor-pointer hover:bg-white hover:text-black mr-4">
+      <Link to="contact" smooth={true} className="bg-yellow-600 text-white sm:text-2xl p-4 rounded-xl cursor-pointer hover:bg-white hover:text-black mr-4">
         <AiOutlineMail />
       </Link>
     </div>

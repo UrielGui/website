@@ -25,7 +25,7 @@ export default function Footer() {
                             <a href="https://dribbble.com/UrielGui" target="_blank" className="bg-white text-black text-2xl p-2.5 rounded-xl cursor-pointer hover:bg-pink-600 hover:text-white mr-4">
                                 <FaDribbble />
                             </a>
-                            <Link to="contact" smooth={true} className="bg-white text-black text-2xl p-2.5 rounded-xl cursor-pointer hover:bg-green-600 hover:text-white mr-4">
+                            <Link to="contact" smooth={true} className="bg-white text-black text-2xl p-2.5 rounded-xl cursor-pointer hover:bg-yellow-600 hover:text-white mr-4">
                                 <AiOutlineMail />
                             </Link>
                         </div>
