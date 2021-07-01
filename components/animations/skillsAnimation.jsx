@@ -7,8 +7,8 @@ export default function FadeInWhenVisible({ children }) {
     return (
       <div ref={ref}>
         {
-            inView ? 
-            children
+            inView 
+            ? children
             : null
         }
       </div>

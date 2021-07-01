@@ -5,7 +5,6 @@ import { Link } from "react-scroll";
 import FadeIn from '../../components/animations/fadeIn'
 
 export default function Header() {
-
   return (
     <section id="header">
       <FadeIn>

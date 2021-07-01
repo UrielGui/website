@@ -8,12 +8,6 @@ import { FaTimes } from 'react-icons/fa';
 export default function Menu() {
   const [activeMobile, setActiveMobile] = useState(false);
 
-  const variants = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: "-100%" },
-    exit: { opacity: 1, x:"-100%" }
-  }
-
   const iconMobileMenu = () => {
     setActiveMobile(!activeMobile);
   };
@@ -52,14 +46,7 @@ export default function Menu() {
       </div>
       <div className={`${activeMobile ? '' : 'hidden'
         } flex flex-col items-center bg-main-color text-xl absolute z-20 w-full lg:hidden`}>
-            <motion.nav
-              animate={activeMobile ? "open" : "closed"}
-              variants={variants}
-              transition={{ duration: 0.6 }}
-              exit={{ opacity: 1, x:"-100%" }}
-          >
               <ResponsiveMenu />
-          </motion.nav>
       </div>
     </>
   )
