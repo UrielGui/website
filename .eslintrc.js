@@ -4,10 +4,10 @@ module.exports = {
         es2021: true,
     },
     extends: [
-        'plugin:react/recommended',
-        'airbnb',
         'prettier',
         'prettier/react',
+        'plugin:react/recommended',
+        'airbnb',
     ],
     parser: 'babel-eslint',
     parserOptions: {
@@ -17,14 +17,12 @@ module.exports = {
         ecmaVersion: 12,
         sourceType: 'module',
     },
-    plugins: [
-        'react',
-    ],
+    plugins: ['react'],
     rules: {
         'prettier/prettier': 'error',
         'react/jsx-filename-extension': [
             'warn',
-            { extensions: ['.js', '.jsx'] }
+            { extensions: ['.js', '.jsx'] },
         ],
         'import/prefer-default-export': 'off',
         'jsx-quotes': ['error', 'prefer-single'],
