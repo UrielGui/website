@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import OnHover from '../../../components/animations/onHover';
 import DesktopMenu from './desktopMenu';
 import ResponsiveMenu from './responsiveMenu';
 import { FaBars } from 'react-icons/fa';
@@ -24,10 +24,7 @@ export default function Menu() {
         <>
             <div className='flex pt-7 w-full px-10'>
                 <div className='sm:w-16 w-14'>
-                    <motion.button
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                    >
+                    <OnHover>
                         <img
                             className='z-50'
                             src='/img/logo.png'
@@ -35,7 +32,7 @@ export default function Menu() {
                             width={68}
                             height={68}
                         ></img>
-                    </motion.button>
+                    </OnHover>
                 </div>
                 <div>
                     <div className='flex flex-row-reverse'>
