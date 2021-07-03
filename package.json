@@ -10,7 +10,6 @@
     "tailwindprod": "NODE_ENV=production postcss styles/tailwind.css -o public/css/main.css"
   },
   "dependencies": {
-    "axios": "^0.21.1",
     "framer-motion": "^4.1.17",
     "ityped": "^1.0.3",
     "next": "^10.2.3",
