@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import OnHover from '../animations/onHover';
 import { Link } from 'react-scroll';
 import ResponsiveMenu from '../../pages/header/menu/responsiveMenu';
 
@@ -16,10 +16,7 @@ export default function menuScroll(props) {
                     <div className='flex'>
                         <div className='flex-grow sm:text-base text-xs'>
                             <Link to='header' smooth={true}>
-                                <motion.button
-                                    whileHover={{ scale: 1.1 }}
-                                    whileTap={{ scale: 0.9 }}
-                                >
+                                <OnHover>
                                     <img
                                         className='z-50 cursor-pointer'
                                         src='/img/logo.png'
@@ -27,7 +24,7 @@ export default function menuScroll(props) {
                                         width={50}
                                         height={50}
                                     ></img>
-                                </motion.button>
+                                </OnHover>
                             </Link>
                         </div>
                         <div className='hidden lg:flex pt-4 uppercase text-sm'>
