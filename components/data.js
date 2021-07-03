@@ -24,7 +24,7 @@ const data = {
             id: '3',
             title: 'User List APP',
             category: 'app',
-            image: 'https://camo.githubusercontent.com/1ba6531aecadf4a10341e83ed1391a1b94aaa4df5332d4e9754ab46463a33e00/68747470733a2f2f692e696d6775722e636f6d2f356241377571542e676966',
+            image: 'https://i.imgur.com/0ejIXma.png',
             description: 'Este projeto é de um aplicativo móvel projetado exclusivamente para permitir visualizar, criar, editar e remover usuários de uma determinada lista.',
             technologies: 'React Native, React Navigation, React Hooks',
             link: 'https://github.com/UrielGui/user-list-app',
