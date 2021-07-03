@@ -2,7 +2,7 @@ import React from 'react';
 import OnHover from '../../../components/animations/onHover';
 import { FaTimes } from 'react-icons/fa';
 
-export function ShowModalImage(image, setShowModal) {
+export default function ShowModalImage(image, setShowModal) {
     return (
         <>
             <div

@@ -2,7 +2,7 @@ import React from 'react';
 import Data from '../../../components/data';
 import PortfolioAnimation from '../../../components/animations/portfolioAnimation';
 import { FcSearch } from 'react-icons/fc';
-import { ShowModalImage } from './showModal';
+import ShowModalImage from './showModal';
 import OnHover from '../../../components/animations/onHover';
 
 export default function items(props) {
