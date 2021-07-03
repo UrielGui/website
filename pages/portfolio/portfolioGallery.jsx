@@ -5,6 +5,20 @@ import PortfolioAnimation from '../../components/animations/portfolioAnimation';
 export default function PortfolioGallery() {
     let [productCategory, setProductCategory] = useState('all');
     let [active, setActive] = useState('m-1');
+    let [showModal, setShowModal] = useState();
+
+    function showModalImage() {
+        return (
+            <>
+                <div className='h-full w-full fixed inset-0 bg-red-500 z-50'>
+                    <h1 className='text-white'>Olá Mundo!</h1>
+                    <button onClick={() => setShowModal('')}>
+                        Fechar Modal
+                    </button>
+                </div>
+            </>
+        );
+    }
 
     function onClickMenu(category, active) {
         setProductCategory(category), setActive(active);
@@ -104,6 +118,11 @@ export default function PortfolioGallery() {
                                             className='sm:h-56 sm:w-72 sm:pb-0 pb-4'
                                             alt={product.name}
                                             src={product.image}
+                                            onClick={() =>
+                                                setShowModal(() =>
+                                                    showModalImage()
+                                                )
+                                            }
                                         />
                                     </div>
                                 </div>
@@ -122,6 +141,7 @@ export default function PortfolioGallery() {
             <div className='w-full flex justify-between flex-wrap lg:flex-row flex-col'>
                 {items()}
             </div>
+            {showModal}
         </>
     );
 }
