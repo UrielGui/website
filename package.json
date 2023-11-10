@@ -12,7 +12,7 @@
   "dependencies": {
     "framer-motion": "^4.1.17",
     "ityped": "^1.0.3",
-    "next": "^10.2.3",
+    "next": "^14.0.2",
     "react": "17.0.1",
     "react-dom": "0.0.0-ee4326357",
     "react-icons": "^4.2.0",
@@ -25,12 +25,12 @@
     "eslint": "^7.29.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "postcss": "^8.3.5",
+    "postcss": "^8.4.31",
     "postcss-cli": "^8.3.1",
     "prettier": "^2.3.2",
     "tailwindcss": "^2.2.4"
