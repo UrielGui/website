@@ -9,7 +9,12 @@ export default class TextBox extends Component {
             showCursor: false,
             typeSpeed: 80,
             backDelay: 2500,
-            strings: [' desenvolvedor full stack', ' ui designer'],
+            strings: [
+                ' desenvolvedor front end',
+                ' web designer',
+                ' ui designer',
+                ' designer gráfico',
+            ],
         });
     }
     render() {

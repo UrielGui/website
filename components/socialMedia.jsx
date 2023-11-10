@@ -23,7 +23,7 @@ export default function SocialMedia() {
                 <FaGithub />
             </a>
             <a
-                href='https://dribbble.com/UrielGui'
+                href='https://dribbble.com/EffeThemes'
                 target='_blank'
                 className='bg-pink-600 text-white sm:text-2xl p-4 rounded-xl cursor-pointer hover:bg-white hover:text-black mr-4'
             >

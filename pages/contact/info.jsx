@@ -31,14 +31,14 @@ export default function Info() {
                     <FaGithub />
                 </a>
                 <a
-                    href='https://dribbble.com/UrielGui'
+                    href='https://dribbble.com/EffeThemes'
                     target='_blank'
                     className='bg-pink-600 text-white sm:text-2xl p-4 rounded-xl cursor-pointer m-2 hover:bg-white hover:text-black mr-4'
                 >
                     <FaDribbble />
                 </a>
                 <a
-                    href='malito:contato@urieldev.tech'
+                    href='malito:urielf23@hotmail.com'
                     className='bg-yellow-600 text-white sm:text-2xl p-4 rounded-xl cursor-pointer hover:bg-white m-2 hover:text-black mr-4'
                 >
                     <FaAt />

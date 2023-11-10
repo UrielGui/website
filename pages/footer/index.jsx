@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className='mainContainer pt-4 md:mt-0 mt-8 pb-4 text-white'>
                     <div className='flex flex-col md:flex-row'>
                         <div className='flex-grow self-center sm:text-base text-xs'>
-                            © 2021 - Desenvolvido por Uriel Guimarães
+                            © 2023 - Desenvolvido por Uriel Guimarães
                         </div>
                         <div className='flex justify-center md:justify-start md:pt-0 pt-4'>
                             <div className='flex flex-wrap'>

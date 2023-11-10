@@ -20,7 +20,7 @@ export default function items(props) {
                     }
                 })
                 .sort((a, b) => (a.description > b.description ? 1 : -1))
-                .slice(0, 4)
+                .slice(0, 6)
                 .map((product) => {
                     return (
                         <div

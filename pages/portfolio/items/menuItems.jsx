@@ -33,17 +33,6 @@ export default function MenuItems(props) {
 
             <span
                 className={
-                    active === 'm-3'
-                        ? 'p-2 px-3.5 mx-6 portfolio-active-menu'
-                        : 'p-2 mx-6 cursor-pointer'
-                }
-                onClick={() => onClickMenu('app', 'm-3')}
-            >
-                App
-            </span>
-
-            <span
-                className={
                     active === 'm-4'
                         ? 'p-2 px-3.5 mx-6 portfolio-active-menu'
                         : 'p-2 mx-6 cursor-pointer'

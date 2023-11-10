@@ -40,7 +40,7 @@ export default function SkillsProgress() {
                 </div>
                 <div className='sm:w-2/5 w-full  sm:pr-0'>
                     <h2 className='py-3 sm:py-0 text-white pb-1 text-xs lg:text-base md:text-base '>
-                        NODE JS / EXPRESS
+                        WORDPRESS / ELEMENTOR
                     </h2>
                     <SkillsAnimation>
                         <div className='progress'>
@@ -53,7 +53,7 @@ export default function SkillsProgress() {
             <div className='sm:flex contents justify-between pt-8 '>
                 <div className='sm:w-2/5 w-full  sm:pr-0'>
                     <h2 className='py-3 sm:py-0 text-white pb-1 text-xs lg:text-base md:text-base '>
-                        REACT / REACT NATIVE
+                        REACT / REACT NATIVE / NEXT JS
                     </h2>
                     <SkillsAnimation>
                         <div className='progress'>
@@ -63,7 +63,7 @@ export default function SkillsProgress() {
                 </div>
                 <div className='sm:w-2/5 w-full  sm:pr-0'>
                     <h2 className='py-3 sm:py-0 text-white pb-1 text-xs lg:text-base md:text-base '>
-                        NEXT JS
+                        DESIGN GRÁFICO
                     </h2>
                     <SkillsAnimation>
                         <div className='progress'>
@@ -86,7 +86,7 @@ export default function SkillsProgress() {
                 </div>
                 <div className='sm:w-2/5 w-full  sm:pr-0'>
                     <h2 className='py-3 sm:py-0 text-white pb-1 text-xs lg:text-base md:text-base '>
-                        API REST
+                        TYPESCRIPT
                     </h2>
                     <SkillsAnimation>
                         <div className='progress'>
@@ -108,7 +108,7 @@ export default function SkillsProgress() {
                 </div>
                 <div className='sm:w-2/5 w-full  sm:pr-0'>
                     <h2 className='py-3 sm:py-0 text-white pb-1 text-xs lg:text-base md:text-base '>
-                        SQL / NOSQL
+                        JQUERY
                     </h2>
                     <SkillsAnimation>
                         <div className='progress'>

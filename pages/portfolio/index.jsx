@@ -11,7 +11,7 @@ export default function Portfolio() {
                     <TextPage title='Meus trabalhos recentes' />
                     <div className='flex justify-center sm:mt-20 mt-10'>
                         <h1 className='text-white sm:text-3xl text-2xl 2xl:text-4xl'>
-                            Projetos Recentes
+                            Projetos em Destaque
                         </h1>
                     </div>
                     <div className='flex justify-center'>
