@@ -13,8 +13,8 @@
     "framer-motion": "^4.1.17",
     "ityped": "^1.0.3",
     "next": "^14.0.2",
-    "react": "17.0.1",
-    "react-dom": "0.0.0-ee4326357",
+    "react": "^18",
+    "react-dom": "^18",
     "react-icons": "^4.2.0",
     "react-intersection-observer": "^8.32.0",
     "react-scroll": "^1.8.2"
