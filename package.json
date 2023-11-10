@@ -1,20 +1,20 @@
 {
   "name": "uriel-portfolio",
-  "version": "1.5.2",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "node server.js",
+    "start": "next start",
     "tailwindbuild": "postcss styles/tailwind.css -o public/css/main.css",
     "tailwindprod": "NODE_ENV=production postcss styles/tailwind.css -o public/css/main.css"
   },
   "dependencies": {
-    "framer-motion": "^4.1.17",
-    "ityped": "^1.0.3",
-    "next": "^14.0.2",
     "react": "^18",
     "react-dom": "^18",
+    "next": "14.0.2",
+    "framer-motion": "^4.1.17",
+    "ityped": "^1.0.3",
     "react-icons": "^4.2.0",
     "react-intersection-observer": "^8.32.0",
     "react-scroll": "^1.8.2"
@@ -34,9 +34,5 @@
     "postcss-cli": "^8.3.1",
     "prettier": "^2.8.8",
     "tailwindcss": "^2.2.19"
-  },
-  "engines": {
-    "node": "18.0.0"
   }
-
 }
